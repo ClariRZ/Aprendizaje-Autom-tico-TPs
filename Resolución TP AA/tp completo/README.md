@@ -3,7 +3,7 @@
 [`TP1_completo.md`](TP1_completo.md) conserva el informe de la primera
 resolución, sus gráficos y el vínculo con el código del TP. Es material de
 desarrollo y estudio: la [entrega final editable](../../entrega_final/TP1.md)
-reproduce el PDF y es el texto principal para entregar.
+es el texto principal para entregar.
 
 ## Cómo seguir sus resultados
 
