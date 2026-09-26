@@ -1,0 +1,28 @@
+variable,momento_inferido,metodo,magnitud_train,n_train,nota
+Pago_de_matrícula_al_día,fecha_de_captura_por_verificar,cramers_v_tres_clases,0.450609,40000,Asociacion marginal descriptiva; V no equiparable a eta2
+Poseedor_de_Beca,fecha_de_captura_por_verificar,cramers_v_tres_clases,0.407033,40000,Asociacion marginal descriptiva; V no equiparable a eta2
+sexo,ingreso_candidato_fecha_por_confirmar,cramers_v_tres_clases,0.328513,40000,Asociacion marginal descriptiva; V no equiparable a eta2
+Carrera,ingreso_sugerido_por_nombre_o_diccionario,cramers_v_tres_clases,0.320473,40000,Asociacion marginal descriptiva; V no equiparable a eta2
+Tiene_deuda,fecha_de_captura_por_verificar,cramers_v_tres_clases,0.257407,40000,Asociacion marginal descriptiva; V no equiparable a eta2
+modo_aplicacion,ingreso_sugerido_por_nombre_o_diccionario,cramers_v_tres_clases,0.248998,40000,Asociacion marginal descriptiva; V no equiparable a eta2
+Estudios_máximos_antes_de_la_inscripción,ingreso_sugerido_por_nombre_o_diccionario,cramers_v_tres_clases,0.169542,40000,Asociacion marginal descriptiva; V no equiparable a eta2
+desplazado,ingreso_candidato_fecha_por_confirmar,cramers_v_tres_clases,0.151165,40000,Asociacion marginal descriptiva; V no equiparable a eta2
+Asistencia_diurna/nocturna,ingreso_candidato_fecha_por_confirmar,cramers_v_tres_clases,0.128569,40000,Asociacion marginal descriptiva; V no equiparable a eta2
+estado_civil,ingreso_sugerido_por_nombre_o_diccionario,cramers_v_tres_clases,0.110196,40000,Asociacion marginal descriptiva; V no equiparable a eta2
+Demanda_Cog_Madre,fecha_de_captura_por_verificar,cramers_v_tres_clases,0.0736669,40000,Asociacion marginal descriptiva; V no equiparable a eta2
+Ingresos_Madre,fecha_de_captura_por_verificar,cramers_v_tres_clases,0.0736669,40000,Asociacion marginal descriptiva; V no equiparable a eta2
+Demanda_Cog_Padre,fecha_de_captura_por_verificar,cramers_v_tres_clases,0.0668318,40000,Asociacion marginal descriptiva; V no equiparable a eta2
+Ingresos_Padre,fecha_de_captura_por_verificar,cramers_v_tres_clases,0.0668318,40000,Asociacion marginal descriptiva; V no equiparable a eta2
+Necesidades_educativas_especiales,ingreso_candidato_fecha_por_confirmar,cramers_v_tres_clases,0.0068587,40000,Asociacion marginal descriptiva; V no equiparable a eta2
+Estudiante_Internacional,ingreso_candidato_fecha_por_confirmar,cramers_v_tres_clases,0.00341847,40000,Asociacion marginal descriptiva; V no equiparable a eta2
+Unidades_curriculares_2do_semestre_(aprobadas),cierre_2do_semestre_inferido,eta2_tres_clases,0.613454,40000,Asociacion marginal descriptiva; no efecto causal
+Nota_promedio_en_el_2do_semestre,cierre_2do_semestre_inferido,eta2_tres_clases,0.55925,40000,Asociacion marginal descriptiva; no efecto causal
+Unidades_curriculares_1er_semestre_(aprobadas),cierre_1er_semestre_inferido,eta2_tres_clases,0.529099,40000,Asociacion marginal descriptiva; no efecto causal
+Nota_promedio_en_el_1er_semestre,cierre_1er_semestre_inferido,eta2_tres_clases,0.470342,40000,Asociacion marginal descriptiva; no efecto causal
+Cantidad_de_evaluaciones_en_el_2do_semestre_,cierre_2do_semestre_inferido,eta2_tres_clases,0.125066,40000,Asociacion marginal descriptiva; no efecto causal
+Edad_al_momento_de_la_inscripción,ingreso_sugerido_por_nombre_o_diccionario,eta2_tres_clases,0.108733,40000,Asociacion marginal descriptiva; no efecto causal
+Unidades_curriculares_2do_semestre_(inscrito),cierre_2do_semestre_inferido,eta2_tres_clases,0.0855603,40000,Asociacion marginal descriptiva; no efecto causal
+Cantidad_de_evaluaciones_en_el_1er_semestre,cierre_1er_semestre_inferido,eta2_tres_clases,0.0836846,40000,Asociacion marginal descriptiva; no efecto causal
+Unidades_curriculares_1er_semestre_(inscrito),cierre_1er_semestre_inferido,eta2_tres_clases,0.0695881,40000,Asociacion marginal descriptiva; no efecto causal
+Puntaje_en_examen_de_ingreso,ingreso_sugerido_por_nombre_o_diccionario,eta2_tres_clases,0.031401,40000,Asociacion marginal descriptiva; no efecto causal
+Cualificación_promedio_de_estudios_previos,ingreso_sugerido_por_nombre_o_diccionario,eta2_tres_clases,0.0233312,40000,Asociacion marginal descriptiva; no efecto causal

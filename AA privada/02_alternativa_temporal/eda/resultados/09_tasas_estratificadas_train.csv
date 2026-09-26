@@ -1,0 +1,64 @@
+aprobadas_1er_semestre_grupo,variable,categoria,n,n_desertor,pct_desertor,ic95_inf_pct,ic95_sup_pct,escasa_menos_100
+0_aprobadas,Carrera,Gestión,1583,1494,94.3778,93.1319,95.4088,False
+0_aprobadas,Carrera,Animación y Diseño Multimedia,1383,1038,75.0542,72.7064,77.2632,False
+0_aprobadas,Carrera,Servicio Social,739,724,97.9702,96.6782,98.7661,False
+0_aprobadas,Carrera,Ingeniería Informática,691,634,91.7511,89.4617,93.5788,False
+0_aprobadas,Carrera,Agronomía,631,609,96.5135,94.7775,97.6865,False
+0_aprobadas,Carrera,Enfermería Veterinaria,614,598,97.3941,95.8091,98.3898,False
+0_aprobadas,Carrera,Enfermería,559,538,96.2433,94.3254,97.53,False
+0_aprobadas,Carrera,Periodismo y Comunicación,482,470,97.5104,95.6992,98.5702,False
+0_aprobadas,Carrera,Publicidad y Marketing,462,456,98.7013,97.1959,99.4035,False
+0_aprobadas,Carrera,Turismo,448,439,97.9911,96.2265,98.9396,False
+0_aprobadas,Carrera,Equinocultura,221,217,98.19,95.4394,99.294,False
+0_aprobadas,Carrera,Educación Básica,206,204,99.0291,96.5297,99.7334,False
+0_aprobadas,Carrera,Diseño de Comunicación,191,188,98.4293,95.4845,99.4644,False
+0_aprobadas,Carrera,Higiene Bucodental,69,63,91.3043,82.2983,95.9537,True
+0_aprobadas,Carrera,Tecnología en Producción de Biocombustibles,17,17,100,81.5676,100,True
+1_a_3_aprobadas,Carrera,Gestión,1791,745,41.5969,39.3345,43.8952,False
+1_a_3_aprobadas,Carrera,Enfermería Veterinaria,450,177,39.3333,34.9284,43.9188,False
+1_a_3_aprobadas,Carrera,Ingeniería Informática,439,202,46.0137,41.406,50.6905,False
+1_a_3_aprobadas,Carrera,Turismo,438,279,63.6986,59.0941,68.0649,False
+1_a_3_aprobadas,Carrera,Servicio Social,405,273,67.4074,62.6974,71.7903,False
+1_a_3_aprobadas,Carrera,Agronomía,292,232,79.4521,74.4495,83.6898,False
+1_a_3_aprobadas,Carrera,Publicidad y Marketing,289,167,57.7855,52.0255,63.3412,False
+1_a_3_aprobadas,Carrera,Equinocultura,196,133,67.8571,61.0296,73.9982,False
+1_a_3_aprobadas,Carrera,Educación Básica,187,124,66.3102,59.2679,72.6958,False
+1_a_3_aprobadas,Carrera,Periodismo y Comunicación,181,139,76.7956,70.1276,82.3498,False
+1_a_3_aprobadas,Carrera,Enfermería,82,55,67.0732,56.3382,76.28,True
+1_a_3_aprobadas,Carrera,Diseño de Comunicación,56,44,78.5714,66.1803,87.2942,True
+1_a_3_aprobadas,Carrera,Higiene Bucodental,50,45,90,78.6395,95.6525,True
+1_a_3_aprobadas,Carrera,Tecnología en Producción de Biocombustibles,3,3,100,43.8494,100,True
+1_a_3_aprobadas,Carrera,Animación y Diseño Multimedia,2,2,100,34.2372,100,True
+4_o_mas_aprobadas,Carrera,Enfermería,5656,265,4.68529,4.16463,5.26746,False
+4_o_mas_aprobadas,Carrera,Servicio Social,4290,353,8.22844,7.44301,9.08861,False
+4_o_mas_aprobadas,Carrera,Periodismo y Comunicación,3637,363,9.98075,9.04841,10.9975,False
+4_o_mas_aprobadas,Carrera,Gestión,2818,364,12.917,11.7289,14.206,False
+4_o_mas_aprobadas,Carrera,Turismo,1922,328,17.0656,15.4497,18.8128,False
+4_o_mas_aprobadas,Carrera,Enfermería Veterinaria,1761,152,8.63146,7.4082,10.0348,False
+4_o_mas_aprobadas,Carrera,Publicidad y Marketing,1741,230,13.2108,11.7009,14.8827,False
+4_o_mas_aprobadas,Carrera,Diseño de Comunicación,1481,136,9.18298,7.8159,10.7613,False
+4_o_mas_aprobadas,Carrera,Educación Básica,1257,272,21.6388,19.4506,23.9998,False
+4_o_mas_aprobadas,Carrera,Agronomía,1022,186,18.1996,15.9545,20.6829,False
+4_o_mas_aprobadas,Carrera,Ingeniería Informática,458,107,23.3624,19.7185,27.4495,False
+4_o_mas_aprobadas,Carrera,Equinocultura,421,106,25.1781,21.2692,29.536,False
+4_o_mas_aprobadas,Carrera,Higiene Bucodental,272,33,12.1324,8.77068,16.5488,False
+4_o_mas_aprobadas,Carrera,Animación y Diseño Multimedia,89,11,12.3596,7.04344,20.7906,True
+4_o_mas_aprobadas,Carrera,Tecnología en Producción de Biocombustibles,18,8,44.4444,24.5592,66.2839,True
+0_aprobadas,Pago_de_matrícula_al_día,Sí,5736,5143,89.6618,88.8471,90.4233,False
+0_aprobadas,Pago_de_matrícula_al_día,No,2560,2546,99.4531,99.0841,99.674,False
+1_a_3_aprobadas,Pago_de_matrícula_al_día,Sí,4002,1789,44.7026,43.168,46.2474,False
+1_a_3_aprobadas,Pago_de_matrícula_al_día,No,859,831,96.7404,95.3293,97.7353,False
+4_o_mas_aprobadas,Pago_de_matrícula_al_día,Sí,25930,2228,8.59236,8.25735,8.93964,False
+4_o_mas_aprobadas,Pago_de_matrícula_al_día,No,913,686,75.1369,72.2318,77.8313,False
+0_aprobadas,Poseedor_de_Beca,No,7891,7435,94.2213,93.6846,94.7149,False
+0_aprobadas,Poseedor_de_Beca,Sí,405,254,62.716,57.9077,67.2855,False
+1_a_3_aprobadas,Poseedor_de_Beca,No,4550,2512,55.2088,53.7601,56.6487,False
+1_a_3_aprobadas,Poseedor_de_Beca,Sí,311,108,34.7267,29.6507,40.1754,False
+4_o_mas_aprobadas,Poseedor_de_Beca,No,17629,2560,14.5215,14.0092,15.0493,False
+4_o_mas_aprobadas,Poseedor_de_Beca,Sí,9214,354,3.84198,3.46836,4.25407,False
+0_aprobadas,Tiene_deuda,No,7122,6557,92.0668,91.4162,92.6721,False
+0_aprobadas,Tiene_deuda,Sí,1174,1132,96.4225,95.1996,97.3425,False
+1_a_3_aprobadas,Tiene_deuda,No,4268,2122,49.7188,48.2197,51.2185,False
+1_a_3_aprobadas,Tiene_deuda,Sí,593,498,83.9798,80.8102,86.7119,False
+4_o_mas_aprobadas,Tiene_deuda,No,25733,2356,9.15556,8.80926,9.51405,False
+4_o_mas_aprobadas,Tiene_deuda,Sí,1110,558,50.2703,47.333,53.2057,False

@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980">
+  <rect width="1600" height="980" fill="#fbfbfa"/>
+  <style>
+    .title{font:700 38px Arial,sans-serif;fill:#2f2f2f}
+    .sub{font:21px Arial,sans-serif;fill:#5c5c5c}
+    .step{font:700 23px Arial,sans-serif;fill:#2f2f2f}
+    .txt{font:18px Arial,sans-serif;fill:#3f3f3f}
+    .num{font:700 22px Arial,sans-serif;fill:#ffffff}
+    .arrow{stroke:#9a9a9a;stroke-width:4;fill:none;marker-end:url(#arrow)}
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9a9a9a"/>
+    </marker>
+  </defs>
+
+  <text x="80" y="65" class="title">Del dato al modelo: cómo se construyó el TP</text>
+  <text x="80" y="102" class="sub">Separamos train/test antes del EDA; después modelamos y discutimos.</text>
+
+  <!-- row 1 -->
+  <g>
+    <rect x="80" y="155" rx="24" ry="24" width="300" height="170" fill="#dcefe7"/>
+    <circle cx="115" cy="190" r="22" fill="#7cae9f"/><text x="108" y="198" class="num">1</text>
+    <text x="150" y="198" class="step">Split 80/20</text>
+    <text x="105" y="238" class="txt">Apartar test antes de mirar</text>
+    <text x="105" y="267" class="txt">clases, asociaciones e</text>
+    <text x="105" y="296" class="txt">hipótesis de predicción.</text>
+  </g>
+
+  <g>
+    <rect x="450" y="155" rx="24" ry="24" width="300" height="170" fill="#f6e5c8"/>
+    <circle cx="485" cy="190" r="22" fill="#c69a52"/><text x="478" y="198" class="num">2</text>
+    <text x="520" y="198" class="step">EDA en train</text>
+    <text x="475" y="238" class="txt">Calidad, clases, ceros,</text>
+    <text x="475" y="267" class="txt">asociaciones y redundancia</text>
+    <text x="475" y="296" class="txt">sin consultar test.</text>
+  </g>
+
+  <g>
+    <rect x="820" y="155" rx="24" ry="24" width="300" height="170" fill="#e7e2f4"/>
+    <circle cx="855" cy="190" r="22" fill="#8e79b7"/><text x="848" y="198" class="num">3</text>
+    <text x="890" y="198" class="step">Hipótesis + pipeline</text>
+    <text x="845" y="238" class="txt">Formular preguntas desde</text>
+    <text x="845" y="267" class="txt">train y ajustar el pipeline</text>
+    <text x="845" y="296" class="txt">dentro de cada fold.</text>
+  </g>
+
+  <g>
+    <rect x="1190" y="155" rx="24" ry="24" width="300" height="170" fill="#dce8f5"/>
+    <circle cx="1225" cy="190" r="22" fill="#6f94bd"/><text x="1218" y="198" class="num">4</text>
+    <text x="1260" y="198" class="step">Binaria</text>
+    <text x="1215" y="238" class="txt">Logística, SVM y Árbol.</text>
+    <text x="1215" y="267" class="txt">GridSearchCV en train y</text>
+    <text x="1215" y="296" class="txt">evaluación final en test.</text>
+  </g>
+
+  <path d="M380 240 L445 240" class="arrow"/>
+  <path d="M750 240 L815 240" class="arrow"/>
+  <path d="M1120 240 L1185 240" class="arrow"/>
+
+  <!-- row 2 -->
+  <g>
+    <rect x="1190" y="455" rx="24" ry="24" width="300" height="170" fill="#f5dfdf"/>
+    <circle cx="1225" cy="490" r="22" fill="#b97878"/><text x="1218" y="498" class="num">5</text>
+    <text x="1260" y="498" class="step">Complejidad</text>
+    <text x="1215" y="538" class="txt">Curvas train-validación:</text>
+    <text x="1215" y="567" class="txt">cuándo sumar complejidad</text>
+    <text x="1215" y="596" class="txt">deja de ayudar.</text>
+  </g>
+
+  <g>
+    <rect x="820" y="455" rx="24" ry="24" width="300" height="170" fill="#f2ead7"/>
+    <circle cx="855" cy="490" r="22" fill="#ad9256"/><text x="848" y="498" class="num">6</text>
+    <text x="890" y="498" class="step">Voting</text>
+    <text x="845" y="538" class="txt">Combinamos los modelos</text>
+    <text x="845" y="567" class="txt">binarios y verificamos si</text>
+    <text x="845" y="596" class="txt">el ensamble mejora.</text>
+  </g>
+
+  <g>
+    <rect x="450" y="455" rx="24" ry="24" width="300" height="170" fill="#e0edf1"/>
+    <circle cx="485" cy="490" r="22" fill="#7298a5"/><text x="478" y="498" class="num">7</text>
+    <text x="520" y="498" class="step">Multiclase</text>
+    <text x="475" y="538" class="txt">K-NN y Árbol; luego</text>
+    <text x="475" y="567" class="txt">Random Forest y AdaBoost</text>
+    <text x="475" y="596" class="txt">para las tres trayectorias.</text>
+  </g>
+
+  <g>
+    <rect x="80" y="455" rx="24" ry="24" width="300" height="170" fill="#e9e6df"/>
+    <circle cx="115" cy="490" r="22" fill="#8e877b"/><text x="108" y="498" class="num">8</text>
+    <text x="150" y="498" class="step">Importancia</text>
+    <text x="105" y="538" class="txt">Permutation Importance</text>
+    <text x="105" y="567" class="txt">dentro de train para ver</text>
+    <text x="105" y="596" class="txt">qué variables usa el modelo.</text>
+  </g>
+
+  <path d="M1340 325 L1340 450" class="arrow"/>
+  <path d="M1190 540 L1125 540" class="arrow"/>
+  <path d="M820 540 L755 540" class="arrow"/>
+  <path d="M450 540 L385 540" class="arrow"/>
+
+  <!-- final row -->
+  <g>
+    <rect x="320" y="730" rx="24" ry="24" width="430" height="155" fill="#f7e4ec"/>
+    <circle cx="355" cy="765" r="22" fill="#b97d95"/><text x="348" y="773" class="num">9</text>
+    <text x="390" y="773" class="step">Comparación final</text>
+    <text x="345" y="813" class="txt">Comparamos desempeño, errores,</text>
+    <text x="345" y="842" class="txt">generalización y dificultad de</text>
+    <text x="345" y="871" class="txt">la tarea binaria vs multiclase.</text>
+  </g>
+
+  <g>
+    <rect x="850" y="730" rx="24" ry="24" width="430" height="155" fill="#dfeadf"/>
+    <circle cx="885" cy="765" r="22" fill="#759a75"/><text x="878" y="773" class="num">10</text>
+    <text x="920" y="773" class="step">Discusión + conclusión</text>
+    <text x="875" y="813" class="txt">Qué significa lo encontrado,</text>
+    <text x="875" y="842" class="txt">qué limita el estudio y qué</text>
+    <text x="875" y="871" class="txt">podemos afirmar —y qué no.</text>
+  </g>
+
+  <path d="M230 625 C230 675 360 680 500 725" class="arrow"/>
+  <path d="M750 807 L845 807" class="arrow"/>
+
+  <text x="80" y="942" class="sub">Idea central: el EDA y la validación usan train; el test se consulta una vez al final.</text>
+</svg>

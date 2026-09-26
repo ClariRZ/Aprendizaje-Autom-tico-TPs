@@ -1,0 +1,10 @@
+modelo,muestra,filas_disponibles,fold,parametro,valor,otros_parametros,n_ajuste_fold,n_validacion_fold,f1_macro_validacion
+AdaBoost,train_completo,40000,1,n_estimators,200,max_depth=2; learning_rate=0.1,26666,13334,0.7737609092402472
+AdaBoost,train_completo,40000,1,n_estimators,400,max_depth=2; learning_rate=0.1,26666,13334,0.7762614899636824
+AdaBoost,train_completo,40000,1,n_estimators,600,max_depth=2; learning_rate=0.1,26666,13334,0.7788266795267192
+AdaBoost,train_completo,40000,2,n_estimators,200,max_depth=2; learning_rate=0.1,26667,13333,0.7577760818348183
+AdaBoost,train_completo,40000,2,n_estimators,400,max_depth=2; learning_rate=0.1,26667,13333,0.7712887110794192
+AdaBoost,train_completo,40000,2,n_estimators,600,max_depth=2; learning_rate=0.1,26667,13333,0.7737971227506293
+AdaBoost,train_completo,40000,3,n_estimators,200,max_depth=2; learning_rate=0.1,26667,13333,0.7553786753415745
+AdaBoost,train_completo,40000,3,n_estimators,400,max_depth=2; learning_rate=0.1,26667,13333,0.7669845111115258
+AdaBoost,train_completo,40000,3,n_estimators,600,max_depth=2; learning_rate=0.1,26667,13333,0.7715884812852618

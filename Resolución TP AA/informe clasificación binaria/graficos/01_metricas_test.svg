@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="600" viewBox="0 0 1050 600">
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;fill:#222}
+.title{font-size:27px;font-weight:700}.subtitle{font-size:15px;fill:#555}.label{font-size:13px}.small{font-size:12px;fill:#555}.value{font-size:11px;font-weight:600}.grid{stroke:#e5e5e5;stroke-width:1}
+</style>
+<rect width="100%" height="100%" fill="white"/>
+<text x="55" y="45" class="title">Clasificación binaria: comparación en test</text>
+<text x="55" y="72" class="subtitle">Desertor vs No desertor · métricas sobre 10.000 casos reservados</text>
+<line x1="90" y1="470" x2="1000" y2="470" stroke="#777"/>
+<line x1="90" y1="120" x2="90" y2="470" stroke="#777"/>
+<line x1="90" y1="400" x2="1000" y2="400" class="grid"/><text x="78" y="404" text-anchor="end" class="small">0,80</text>
+<line x1="90" y1="330" x2="1000" y2="330" class="grid"/><text x="78" y="334" text-anchor="end" class="small">0,84</text>
+<line x1="90" y1="260" x2="1000" y2="260" class="grid"/><text x="78" y="264" text-anchor="end" class="small">0,88</text>
+<line x1="90" y1="190" x2="1000" y2="190" class="grid"/><text x="78" y="194" text-anchor="end" class="small">0,92</text>
+<line x1="90" y1="120" x2="1000" y2="120" class="grid"/><text x="78" y="124" text-anchor="end" class="small">0,96</text>
+
+<rect x="135" y="213.5" width="42" height="256.5" fill="#4e79a7"/><text x="156" y="204" text-anchor="middle" class="value">0,9066</text>
+<rect x="182" y="224.3" width="42" height="245.7" fill="#f28e2b"/><text x="203" y="215" text-anchor="middle" class="value">0,9004</text>
+<rect x="229" y="388.2" width="42" height="81.8" fill="#e15759"/><text x="250" y="379" text-anchor="middle" class="value">0,8067</text>
+<rect x="276" y="311.8" width="42" height="158.2" fill="#76b7b2"/><text x="297" y="303" text-anchor="middle" class="value">0,8510</text>
+<rect x="323" y="136.5" width="42" height="333.5" fill="#59a14f"/><text x="344" y="127" text-anchor="middle" class="value">0,9506</text>
+<text x="250" y="510" text-anchor="middle" class="label">Logística</text>
+
+<rect x="435" y="228.7" width="42" height="241.3" fill="#4e79a7"/><text x="456" y="220" text-anchor="middle" class="value">0,8979</text>
+<rect x="482" y="198.7" width="42" height="271.3" fill="#f28e2b"/><text x="503" y="190" text-anchor="middle" class="value">0,9150</text>
+<rect x="529" y="466" width="42" height="4" fill="#e15759"/><text x="550" y="454" text-anchor="middle" class="value">0,7619</text>
+<rect x="576" y="345" width="42" height="125" fill="#76b7b2"/><text x="597" y="336" text-anchor="middle" class="value">0,8315</text>
+<rect x="623" y="144.5" width="42" height="325.5" fill="#59a14f"/><text x="644" y="135" text-anchor="middle" class="value">0,9460</text>
+<text x="550" y="510" text-anchor="middle" class="label">SVM</text>
+
+<rect x="735" y="215.1" width="42" height="254.9" fill="#4e79a7"/><text x="756" y="206" text-anchor="middle" class="value">0,9057</text>
+<rect x="782" y="213.8" width="42" height="256.2" fill="#f28e2b"/><text x="803" y="205" text-anchor="middle" class="value">0,9064</text>
+<rect x="829" y="405.2" width="42" height="64.8" fill="#e15759"/><text x="850" y="396" text-anchor="middle" class="value">0,7970</text>
+<rect x="876" y="316.1" width="42" height="153.9" fill="#76b7b2"/><text x="897" y="307" text-anchor="middle" class="value">0,8482</text>
+<rect x="923" y="148" width="42" height="322" fill="#59a14f"/><text x="944" y="139" text-anchor="middle" class="value">0,9440</text>
+<text x="850" y="510" text-anchor="middle" class="label">Árbol</text>
+
+<rect x="150" y="550" width="14" height="14" fill="#4e79a7"/><text x="172" y="562" class="small">Accuracy</text>
+<rect x="280" y="550" width="14" height="14" fill="#f28e2b"/><text x="302" y="562" class="small">Precision</text>
+<rect x="420" y="550" width="14" height="14" fill="#e15759"/><text x="442" y="562" class="small">Recall</text>
+<rect x="535" y="550" width="14" height="14" fill="#76b7b2"/><text x="557" y="562" class="small">F1</text>
+<rect x="625" y="550" width="14" height="14" fill="#59a14f"/><text x="647" y="562" class="small">ROC-AUC</text>
+</svg>

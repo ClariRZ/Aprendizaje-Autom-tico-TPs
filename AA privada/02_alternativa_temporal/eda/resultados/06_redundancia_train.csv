@@ -1,0 +1,11 @@
+variable_a,variable_b,relacion,magnitud,detalle
+Unidades_curriculares_1er_semestre_(inscrito),Unidades_curriculares_2do_semestre_(inscrito),spearman,0.97885,Asociacion de rangos; no implica duplicacion
+Cantidad_de_evaluaciones_en_el_1er_semestre,Cantidad_de_evaluaciones_en_el_2do_semestre_,spearman,0.704169,Asociacion de rangos; no implica duplicacion
+Unidades_curriculares_1er_semestre_(aprobadas),Nota_promedio_en_el_1er_semestre,spearman,0.770031,Asociacion de rangos; no implica duplicacion
+Unidades_curriculares_1er_semestre_(aprobadas),Unidades_curriculares_2do_semestre_(aprobadas),spearman,0.921392,Asociacion de rangos; no implica duplicacion
+Unidades_curriculares_1er_semestre_(aprobadas),Nota_promedio_en_el_2do_semestre,spearman,0.776848,Asociacion de rangos; no implica duplicacion
+Nota_promedio_en_el_1er_semestre,Unidades_curriculares_2do_semestre_(aprobadas),spearman,0.757829,Asociacion de rangos; no implica duplicacion
+Nota_promedio_en_el_1er_semestre,Nota_promedio_en_el_2do_semestre,spearman,0.821867,Asociacion de rangos; no implica duplicacion
+Unidades_curriculares_2do_semestre_(aprobadas),Nota_promedio_en_el_2do_semestre,spearman,0.807784,Asociacion de rangos; no implica duplicacion
+Demanda_Cog_Padre,Ingresos_Padre,biyeccion_categorica_en_train,1,Cada categoria de una determina exactamente la otra en train
+Demanda_Cog_Madre,Ingresos_Madre,biyeccion_categorica_en_train,1,Cada categoria de una determina exactamente la otra en train

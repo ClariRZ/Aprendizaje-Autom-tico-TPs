@@ -1,0 +1,45 @@
+variable,momento_inferido,grupo,n,n_validos,n_ceros,pct_ceros,mediana_todos,q25_todos,q75_todos,media_todos,n_positivos,mediana_positivos,q25_positivos,q75_positivos
+Cualificación_promedio_de_estudios_previos,ingreso_sugerido_por_nombre_o_diccionario,TOTAL_TRAIN,40000,40000,0,0,67,62,70,66.2771,40000,67,62,70
+Cualificación_promedio_de_estudios_previos,ingreso_sugerido_por_nombre_o_diccionario,Desertor,13223,13223,0,0,67,62,68,65.6685,13223,67,62,68
+Cualificación_promedio_de_estudios_previos,ingreso_sugerido_por_nombre_o_diccionario,En Curso,7811,7811,0,0,65,62,68,65.1917,7811,65,62,68
+Cualificación_promedio_de_estudios_previos,ingreso_sugerido_por_nombre_o_diccionario,Graduado,18966,18966,0,0,67,64,70,67.1483,18966,67,64,70
+Puntaje_en_examen_de_ingreso,ingreso_sugerido_por_nombre_o_diccionario,TOTAL_TRAIN,40000,40000,0,0,62,59,66,62.7003,40000,62,59,66
+Puntaje_en_examen_de_ingreso,ingreso_sugerido_por_nombre_o_diccionario,Desertor,13223,13223,0,0,61,58,65,61.5359,13223,61,58,65
+Puntaje_en_examen_de_ingreso,ingreso_sugerido_por_nombre_o_diccionario,En Curso,7811,7811,0,0,61,59,65,61.8288,7811,61,59,65
+Puntaje_en_examen_de_ingreso,ingreso_sugerido_por_nombre_o_diccionario,Graduado,18966,18966,0,0,63,60,67,63.871,18966,63,60,67
+Edad_al_momento_de_la_inscripción,ingreso_sugerido_por_nombre_o_diccionario,TOTAL_TRAIN,40000,40000,0,0,19,18,23,22.2812,40000,19,18,23
+Edad_al_momento_de_la_inscripción,ingreso_sugerido_por_nombre_o_diccionario,Desertor,13223,13223,0,0,22,19,29,25.495,13223,22,19,29
+Edad_al_momento_de_la_inscripción,ingreso_sugerido_por_nombre_o_diccionario,En Curso,7811,7811,0,0,19,18,21,21.3039,7811,19,18,21
+Edad_al_momento_de_la_inscripción,ingreso_sugerido_por_nombre_o_diccionario,Graduado,18966,18966,0,0,19,18,20,20.443,18966,19,18,20
+Unidades_curriculares_1er_semestre_(inscrito),cierre_1er_semestre_inferido,TOTAL_TRAIN,40000,40000,1382,3.455,6,5,6,5.89527,38618,6,5,6
+Unidades_curriculares_1er_semestre_(inscrito),cierre_1er_semestre_inferido,Desertor,13223,13223,1037,7.8424,6,5,6,5.35741,12186,6,5,6
+Unidades_curriculares_1er_semestre_(inscrito),cierre_1er_semestre_inferido,En Curso,7811,7811,89,1.13942,6,5,6,5.72667,7722,6,5,6
+Unidades_curriculares_1er_semestre_(inscrito),cierre_1er_semestre_inferido,Graduado,18966,18966,256,1.34978,6,6,7,6.33971,18710,6,6,7
+Cantidad_de_evaluaciones_en_el_1er_semestre,cierre_1er_semestre_inferido,TOTAL_TRAIN,40000,40000,4079,10.1975,7,6,9,7.38272,35921,8,6,9
+Cantidad_de_evaluaciones_en_el_1er_semestre,cierre_1er_semestre_inferido,Desertor,13223,13223,3694,27.9362,6,0,9,6.19496,9529,8,6,11
+Cantidad_de_evaluaciones_en_el_1er_semestre,cierre_1er_semestre_inferido,En Curso,7811,7811,118,1.51069,9,8,11,9.06837,7693,9,8,11
+Cantidad_de_evaluaciones_en_el_1er_semestre,cierre_1er_semestre_inferido,Graduado,18966,18966,267,1.40778,7,6,8,7.51661,18699,7,6,8
+Unidades_curriculares_1er_semestre_(aprobadas),cierre_1er_semestre_inferido,TOTAL_TRAIN,40000,40000,8296,20.74,5,2,6,4.18565,31704,6,4,6
+Unidades_curriculares_1er_semestre_(aprobadas),cierre_1er_semestre_inferido,Desertor,13223,13223,7689,58.1487,0,0,3,1.56349,5534,4,2,5
+Unidades_curriculares_1er_semestre_(aprobadas),cierre_1er_semestre_inferido,En Curso,7811,7811,328,4.19921,4,3,5,4.24555,7483,5,3,5
+Unidades_curriculares_1er_semestre_(aprobadas),cierre_1er_semestre_inferido,Graduado,18966,18966,279,1.47105,6,6,6,5.98914,18687,6,6,6
+Nota_promedio_en_el_1er_semestre,cierre_1er_semestre_inferido,TOTAL_TRAIN,40000,40000,8298,20.745,61,53,67,50.0953,31702,63,59,68
+Nota_promedio_en_el_1er_semestre,cierre_1er_semestre_inferido,Desertor,13223,13223,7689,58.1487,0,0,58,24.7925,5534,59,55,62
+Nota_promedio_en_el_1er_semestre,cierre_1er_semestre_inferido,En Curso,7811,7811,329,4.21201,60,55,63,57.4299,7482,60,56,63
+Nota_promedio_en_el_1er_semestre,cierre_1er_semestre_inferido,Graduado,18966,18966,280,1.47633,66,62,69,64.7155,18686,66,62,69
+Unidades_curriculares_2do_semestre_(inscrito),cierre_2do_semestre_inferido,TOTAL_TRAIN,40000,40000,1383,3.4575,6,5,6,5.93698,38617,6,5,6
+Unidades_curriculares_2do_semestre_(inscrito),cierre_2do_semestre_inferido,Desertor,13223,13223,1039,7.85752,6,5,6,5.36845,12184,6,5,6
+Unidades_curriculares_2do_semestre_(inscrito),cierre_2do_semestre_inferido,En Curso,7811,7811,89,1.13942,6,5,6,5.72833,7722,6,5,6
+Unidades_curriculares_2do_semestre_(inscrito),cierre_2do_semestre_inferido,Graduado,18966,18966,255,1.34451,6,6,8,6.41928,18711,6,6,8
+Cantidad_de_evaluaciones_en_el_2do_semestre_,cierre_2do_semestre_inferido,TOTAL_TRAIN,40000,40000,4534,11.335,8,6,9,7.25825,35466,8,6,9
+Cantidad_de_evaluaciones_en_el_2do_semestre_,cierre_2do_semestre_inferido,Desertor,13223,13223,4137,31.2864,6,0,9,5.71958,9086,8,6,10
+Cantidad_de_evaluaciones_en_el_2do_semestre_,cierre_2do_semestre_inferido,En Curso,7811,7811,124,1.5875,9,8,11,9.17424,7687,9,8,11
+Cantidad_de_evaluaciones_en_el_2do_semestre_,cierre_2do_semestre_inferido,Graduado,18966,18966,273,1.43942,7,6,8,7.54192,18693,7,6,8
+Unidades_curriculares_2do_semestre_(aprobadas),cierre_2do_semestre_inferido,TOTAL_TRAIN,40000,40000,9623,24.0575,5,1,6,4.01045,30377,6,4,6
+Unidades_curriculares_2do_semestre_(aprobadas),cierre_2do_semestre_inferido,Desertor,13223,13223,8978,67.8968,0,0,2,1.13159,4245,3,2,5
+Unidades_curriculares_2do_semestre_(aprobadas),cierre_2do_semestre_inferido,En Curso,7811,7811,361,4.62169,4,3,5,3.93151,7450,4,3,5
+Unidades_curriculares_2do_semestre_(aprobadas),cierre_2do_semestre_inferido,Graduado,18966,18966,284,1.49742,6,5,7,6.05009,18682,6,5,7
+Nota_promedio_en_el_2do_semestre,cierre_2do_semestre_inferido,TOTAL_TRAIN,40000,40000,9627,24.0675,61,50,66,48.1987,30373,63,59,68
+Nota_promedio_en_el_2do_semestre,cierre_2do_semestre_inferido,Desertor,13223,13223,8977,67.8893,0,0,55,19.019,4246,58,55,63
+Nota_promedio_en_el_2do_semestre,cierre_2do_semestre_inferido,En Curso,7811,7811,362,4.63449,59,55,63,56.8789,7449,60,55,63
+Nota_promedio_en_el_2do_semestre,cierre_2do_semestre_inferido,Graduado,18966,18966,288,1.51851,65,62,70,64.9678,18678,66,62,70

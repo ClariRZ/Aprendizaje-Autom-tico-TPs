@@ -1,0 +1,67 @@
+variable,momento_inferido,categoria,n,pct_del_train,n_desertor,pct_desertor,ic95_desertor_inf_pct,ic95_desertor_sup_pct,pct_en_curso,pct_graduado,categoria_escasa_menos_100
+Asistencia_diurna/nocturna,ingreso_candidato_fecha_por_confirmar,Diurna,36633,91.5825,11443,31.2369,30.7642,31.7134,19.8864,48.8767,False
+Asistencia_diurna/nocturna,ingreso_candidato_fecha_por_confirmar,Nocturna,3367,8.4175,1780,52.8661,51.1776,54.548,15.6222,31.5117,False
+Carrera,ingreso_sugerido_por_nombre_o_diccionario,Enfermería,6297,15.7425,858,13.6255,12.8003,14.4951,9.09957,77.2749,False
+Carrera,ingreso_sugerido_por_nombre_o_diccionario,Gestión,6192,15.48,2603,42.0381,40.8139,43.2722,32.0898,25.8721,False
+Carrera,ingreso_sugerido_por_nombre_o_diccionario,Servicio Social,5434,13.585,1350,24.8436,23.7127,26.01,12.9923,62.1642,False
+Carrera,ingreso_sugerido_por_nombre_o_diccionario,Periodismo y Comunicación,4300,10.75,972,22.6047,21.3792,23.879,9.83721,67.5581,False
+Carrera,ingreso_sugerido_por_nombre_o_diccionario,Enfermería Veterinaria,2825,7.0625,927,32.8142,31.107,34.568,25.3097,41.8761,False
+Carrera,ingreso_sugerido_por_nombre_o_diccionario,Turismo,2808,7.02,1046,37.2507,35.481,39.0552,25.1425,37.6068,False
+Carrera,ingreso_sugerido_por_nombre_o_diccionario,Publicidad y Marketing,2492,6.23,853,34.2295,32.3921,36.1155,21.9904,43.7801,False
+Carrera,ingreso_sugerido_por_nombre_o_diccionario,Agronomía,1945,4.8625,1027,52.8021,50.5801,55.013,19.2288,27.9692,False
+Carrera,ingreso_sugerido_por_nombre_o_diccionario,Diseño de Comunicación,1728,4.32,368,21.2963,19.4307,23.2892,14.9306,63.7731,False
+Carrera,ingreso_sugerido_por_nombre_o_diccionario,Educación Básica,1650,4.125,600,36.3636,34.0767,38.714,35.6364,28,False
+Carrera,ingreso_sugerido_por_nombre_o_diccionario,Ingeniería Informática,1588,3.97,943,59.3829,56.9475,61.773,35.5793,5.03778,False
+Carrera,ingreso_sugerido_por_nombre_o_diccionario,Animación y Diseño Multimedia,1474,3.685,1051,71.3026,68.9402,73.5542,7.25916,21.4383,False
+Carrera,ingreso_sugerido_por_nombre_o_diccionario,Equinocultura,838,2.095,456,54.4153,51.0306,57.7596,22.7924,22.7924,False
+Carrera,ingreso_sugerido_por_nombre_o_diccionario,Higiene Bucodental,391,0.9775,141,36.0614,31.4587,40.9353,16.3683,47.5703,False
+Carrera,ingreso_sugerido_por_nombre_o_diccionario,Tecnología en Producción de Biocombustibles,38,0.095,28,73.6842,57.9908,85.0285,15.7895,10.5263,True
+Demanda_Cog_Madre,fecha_de_captura_por_verificar,Muy baja demanda cognitiva,18694,46.735,6968,37.274,36.5835,37.9697,17.7116,45.0144,False
+Demanda_Cog_Madre,fecha_de_captura_por_verificar,Demanda cognitiva media,13368,33.42,3930,29.3986,28.6323,30.1767,20.0853,50.5162,False
+Demanda_Cog_Madre,fecha_de_captura_por_verificar,Muy alta demanda cognitiva,2890,7.225,934,32.3183,30.6376,34.046,26.436,41.2457,False
+Demanda_Cog_Madre,fecha_de_captura_por_verificar,Demanda cognitiva baja,2605,6.5125,804,30.8637,29.1191,32.6647,18.6564,50.4798,False
+Demanda_Cog_Madre,fecha_de_captura_por_verificar,Alta demanda cognitiva,2443,6.1075,587,24.0278,22.3752,25.762,23.1273,52.8449,False
+Demanda_Cog_Padre,fecha_de_captura_por_verificar,Muy baja demanda cognitiva,15987,39.9675,5894,36.8675,36.1228,37.6184,17.3453,45.7872,False
+Demanda_Cog_Padre,fecha_de_captura_por_verificar,Demanda cognitiva media,8542,21.355,2739,32.0651,31.0836,33.0627,21.4236,46.5114,False
+Demanda_Cog_Padre,fecha_de_captura_por_verificar,Demanda cognitiva baja,8247,20.6175,2258,27.3797,26.428,28.3524,20.3468,52.2736,False
+Demanda_Cog_Padre,fecha_de_captura_por_verificar,Muy alta demanda cognitiva,4206,10.515,1453,34.5459,33.1235,35.9965,23.3714,42.0827,False
+Demanda_Cog_Padre,fecha_de_captura_por_verificar,Alta demanda cognitiva,3018,7.545,879,29.1252,27.5316,30.772,18.1246,52.7502,False
+Estudiante_Internacional,ingreso_candidato_fecha_por_confirmar,No,39743,99.3575,13140,33.0624,32.6016,33.5266,19.5355,47.4021,False
+Estudiante_Internacional,ingreso_candidato_fecha_por_confirmar,Sí,257,0.6425,83,32.2957,26.8757,38.2372,18.2879,49.4163,False
+Estudios_máximos_antes_de_la_inscripción,ingreso_sugerido_por_nombre_o_diccionario,Educación Secundaria,35109,87.7725,10367,29.528,29.0531,30.0074,20.1971,50.2749,False
+Estudios_máximos_antes_de_la_inscripción,ingreso_sugerido_por_nombre_o_diccionario,Superior - Pregrado,2665,6.6625,1145,42.9644,41.0963,44.8526,20.7505,36.2852,False
+Estudios_máximos_antes_de_la_inscripción,ingreso_sugerido_por_nombre_o_diccionario,Educación Básica,2186,5.465,1691,77.3559,75.5543,79.0615,7.22781,15.4163,False
+Estudios_máximos_antes_de_la_inscripción,ingreso_sugerido_por_nombre_o_diccionario,Superior - Posgrado,33,0.0825,15,45.4545,29.8427,62.0143,24.2424,30.303,True
+Estudios_máximos_antes_de_la_inscripción,ingreso_sugerido_por_nombre_o_diccionario,Otros / No completado,7,0.0175,5,71.4286,35.8929,91.7783,14.2857,14.2857,True
+Ingresos_Madre,fecha_de_captura_por_verificar,Bajos ingresos,18694,46.735,6968,37.274,36.5835,37.9697,17.7116,45.0144,False
+Ingresos_Madre,fecha_de_captura_por_verificar,Ingresos medios,13368,33.42,3930,29.3986,28.6323,30.1767,20.0853,50.5162,False
+Ingresos_Madre,fecha_de_captura_por_verificar,Altos ingresos,2890,7.225,934,32.3183,30.6376,34.046,26.436,41.2457,False
+Ingresos_Madre,fecha_de_captura_por_verificar,Ingresos medios-bajos,2605,6.5125,804,30.8637,29.1191,32.6647,18.6564,50.4798,False
+Ingresos_Madre,fecha_de_captura_por_verificar,Ingresos medios-altos,2443,6.1075,587,24.0278,22.3752,25.762,23.1273,52.8449,False
+Ingresos_Padre,fecha_de_captura_por_verificar,Bajos ingresos,15987,39.9675,5894,36.8675,36.1228,37.6184,17.3453,45.7872,False
+Ingresos_Padre,fecha_de_captura_por_verificar,Ingresos medios,8542,21.355,2739,32.0651,31.0836,33.0627,21.4236,46.5114,False
+Ingresos_Padre,fecha_de_captura_por_verificar,Ingresos medios-bajos,8247,20.6175,2258,27.3797,26.428,28.3524,20.3468,52.2736,False
+Ingresos_Padre,fecha_de_captura_por_verificar,Altos ingresos,4206,10.515,1453,34.5459,33.1235,35.9965,23.3714,42.0827,False
+Ingresos_Padre,fecha_de_captura_por_verificar,Ingresos medios-altos,3018,7.545,879,29.1252,27.5316,30.772,18.1246,52.7502,False
+Necesidades_educativas_especiales,ingreso_candidato_fecha_por_confirmar,No,39842,99.605,13170,33.0556,32.5953,33.5191,19.5121,47.4324,False
+Necesidades_educativas_especiales,ingreso_candidato_fecha_por_confirmar,Sí,158,0.395,53,33.5443,26.6502,41.2196,23.4177,43.038,False
+Pago_de_matrícula_al_día,fecha_de_captura_por_verificar,Sí,35668,89.17,9160,25.6813,25.2305,26.1373,21.3581,52.9606,False
+Pago_de_matrícula_al_día,fecha_de_captura_por_verificar,No,4332,10.83,4063,93.7904,93.0322,94.471,4.45522,1.75439,False
+Poseedor_de_Beca,fecha_de_captura_por_verificar,No,30070,75.175,12507,41.5929,41.037,42.1511,22.5274,35.8796,False
+Poseedor_de_Beca,fecha_de_captura_por_verificar,Sí,9930,24.825,716,7.21047,6.71809,7.73595,10.4431,82.3464,False
+Tiene_deuda,fecha_de_captura_por_verificar,No,37123,92.8075,11035,29.7255,29.2627,30.1925,20.0954,50.1791,False
+Tiene_deuda,fecha_de_captura_por_verificar,Sí,2877,7.1925,2188,76.0514,74.4579,77.5755,12.2002,11.7483,False
+desplazado,ingreso_candidato_fecha_por_confirmar,Sí,22891,57.2275,6249,27.2989,26.7257,27.8798,19.5055,53.1956,False
+desplazado,ingreso_candidato_fecha_por_confirmar,No,17109,42.7725,6974,40.7622,40.028,41.5005,19.557,39.6809,False
+estado_civil,ingreso_sugerido_por_nombre_o_diccionario,Soltero,36712,91.78,11339,30.8864,30.4158,31.361,20.0479,49.0657,False
+estado_civil,ingreso_sugerido_por_nombre_o_diccionario,Casado,2730,6.825,1543,56.5201,54.6527,58.3693,13.4066,30.0733,False
+estado_civil,ingreso_sugerido_por_nombre_o_diccionario,Divorciado,471,1.1775,291,61.7834,57.3164,66.0598,16.1359,22.0807,False
+estado_civil,ingreso_sugerido_por_nombre_o_diccionario,Unión de hecho,58,0.145,32,55.1724,42.4519,67.2503,6.89655,37.931,True
+estado_civil,ingreso_sugerido_por_nombre_o_diccionario,Separado legalmente,18,0.045,13,72.2222,49.1269,87.5004,16.6667,11.1111,True
+estado_civil,ingreso_sugerido_por_nombre_o_diccionario,Viudo,11,0.0275,5,45.4545,21.271,71.9912,18.1818,36.3636,True
+modo_aplicacion,ingreso_sugerido_por_nombre_o_diccionario,Acceso General,27723,69.3075,6299,22.7212,22.2317,23.2182,20.3549,56.9239,False
+modo_aplicacion,ingreso_sugerido_por_nombre_o_diccionario,Acceso por Normativa Específica,11295,28.2375,6323,55.9805,55.0632,56.8938,18.4241,25.5954,False
+modo_aplicacion,ingreso_sugerido_por_nombre_o_diccionario,Acceso para Titulados,799,1.9975,576,72.0901,68.8798,75.089,6.75845,21.1514,False
+modo_aplicacion,ingreso_sugerido_por_nombre_o_diccionario,Contingente Especial (Regional),183,0.4575,25,13.6612,9.42745,19.3893,18.0328,68.306,False
+sexo,ingreso_candidato_fecha_por_confirmar,Femenino,27392,68.48,6489,23.6894,23.1896,24.1966,18.5383,57.7723,False
+sexo,ingreso_candidato_fecha_por_confirmar,Masculino,12608,31.52,6734,53.4105,52.5389,54.2801,21.6767,24.9128,False

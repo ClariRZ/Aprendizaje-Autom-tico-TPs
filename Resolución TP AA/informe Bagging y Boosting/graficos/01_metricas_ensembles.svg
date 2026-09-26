@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="560" viewBox="0 0 1050 560">
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;fill:#222}.title{font-size:27px;font-weight:700}.sub{font-size:15px;fill:#555}.lab{font-size:12px}.grid{stroke:#e5e5e5}</style>
+<rect width="100%" height="100%" fill="white"/>
+<text x="50" y="44" class="title">Los ensambles mejoran al Árbol multiclase</text>
+<text x="50" y="70" class="sub">Métricas sobre el mismo conjunto de test</text>
+<line x1="100" y1="450" x2="1000" y2="450" stroke="#777"/>
+<line x1="100" y1="120" x2="100" y2="450" stroke="#777"/>
+<line x1="100" y1="367" x2="1000" y2="367" class="grid"/><text x="88" y="372" text-anchor="end" class="lab">0,70</text>
+<line x1="100" y1="285" x2="1000" y2="285" class="grid"/><text x="88" y="290" text-anchor="end" class="lab">0,80</text>
+<line x1="100" y1="202" x2="1000" y2="202" class="grid"/><text x="88" y="207" text-anchor="end" class="lab">0,90</text>
+<line x1="100" y1="120" x2="1000" y2="120" class="grid"/><text x="88" y="125" text-anchor="end" class="lab">1,00</text>
+<rect x="123" y="276.255" width="32" height="173.745" fill="#4e79a7"/><rect x="161" y="268.83" width="32" height="181.17000000000002" fill="#59a14f"/><rect x="199" y="269.98499999999996" width="32" height="180.01500000000004" fill="#e15759"/><text x="180" y="480" text-anchor="middle" class="lab">Accuracy</text><rect x="313" y="303.645" width="32" height="146.35500000000002" fill="#4e79a7"/><rect x="351" y="293.58000000000004" width="32" height="156.41999999999996" fill="#59a14f"/><rect x="389" y="295.395" width="32" height="154.60500000000002" fill="#e15759"/><text x="370" y="480" text-anchor="middle" class="lab">Precision</text><rect x="503" y="314.12249999999995" width="32" height="135.87750000000005" fill="#4e79a7"/><rect x="541" y="305.625" width="32" height="144.375" fill="#59a14f"/><rect x="579" y="309.1724999999999" width="32" height="140.8275000000001" fill="#e15759"/><text x="560" y="480" text-anchor="middle" class="lab">Recall</text><rect x="693" y="309.8325" width="32" height="140.16750000000002" fill="#4e79a7"/><rect x="731" y="300.8399999999999" width="32" height="149.16000000000008" fill="#59a14f"/><rect x="769" y="303.48" width="32" height="146.51999999999998" fill="#e15759"/><text x="750" y="480" text-anchor="middle" class="lab">F1 macro</text><rect x="873" y="188.47499999999997" width="32" height="261.52500000000003" fill="#4e79a7"/><rect x="911" y="181.54500000000002" width="32" height="268.455" fill="#59a14f"/><rect x="949" y="184.43249999999995" width="32" height="265.56750000000005" fill="#e15759"/><text x="930" y="480" text-anchor="middle" class="lab">ROC-AUC</text>
+<rect x="350" y="515" width="14" height="14" fill="#4e79a7"/><text x="372" y="527" class="lab">Árbol</text>
+<rect x="455" y="515" width="14" height="14" fill="#59a14f"/><text x="477" y="527" class="lab">Random Forest</text>
+<rect x="610" y="515" width="14" height="14" fill="#e15759"/><text x="632" y="527" class="lab">AdaBoost</text>
+</svg>

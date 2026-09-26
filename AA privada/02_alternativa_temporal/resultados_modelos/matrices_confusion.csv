@@ -1,0 +1,79 @@
+tarea,etapa,real,predicha,n
+binaria,E0_entrada_candidata,0,0,6024
+binaria,E0_entrada_candidata,0,1,670
+binaria,E0_entrada_candidata,1,0,1666
+binaria,E0_entrada_candidata,1,1,1640
+binaria,E1_mas_semestre1,0,0,6325
+binaria,E1_mas_semestre1,0,1,369
+binaria,E1_mas_semestre1,1,0,843
+binaria,E1_mas_semestre1,1,1,2463
+binaria,E2_mas_semestre2,0,0,6381
+binaria,E2_mas_semestre2,0,1,313
+binaria,E2_mas_semestre2,1,0,713
+binaria,E2_mas_semestre2,1,1,2593
+binaria,E0_con_sin_fecha,0,0,6219
+binaria,E0_con_sin_fecha,0,1,475
+binaria,E0_con_sin_fecha,1,0,1413
+binaria,E0_con_sin_fecha,1,1,1893
+binaria,E1_con_sin_fecha,0,0,6381
+binaria,E1_con_sin_fecha,0,1,313
+binaria,E1_con_sin_fecha,1,0,741
+binaria,E1_con_sin_fecha,1,1,2565
+binaria,E2_con_sin_fecha,0,0,6410
+binaria,E2_con_sin_fecha,0,1,284
+binaria,E2_con_sin_fecha,1,0,624
+binaria,E2_con_sin_fecha,1,1,2682
+multiclase,E0_entrada_candidata,Desertor,Desertor,2123
+multiclase,E0_entrada_candidata,Desertor,En Curso,279
+multiclase,E0_entrada_candidata,Desertor,Graduado,904
+multiclase,E0_entrada_candidata,En Curso,Desertor,526
+multiclase,E0_entrada_candidata,En Curso,En Curso,488
+multiclase,E0_entrada_candidata,En Curso,Graduado,939
+multiclase,E0_entrada_candidata,Graduado,Desertor,642
+multiclase,E0_entrada_candidata,Graduado,En Curso,325
+multiclase,E0_entrada_candidata,Graduado,Graduado,3774
+multiclase,E1_mas_semestre1,Desertor,Desertor,2554
+multiclase,E1_mas_semestre1,Desertor,En Curso,409
+multiclase,E1_mas_semestre1,Desertor,Graduado,343
+multiclase,E1_mas_semestre1,En Curso,Desertor,384
+multiclase,E1_mas_semestre1,En Curso,En Curso,847
+multiclase,E1_mas_semestre1,En Curso,Graduado,722
+multiclase,E1_mas_semestre1,Graduado,Desertor,148
+multiclase,E1_mas_semestre1,Graduado,En Curso,370
+multiclase,E1_mas_semestre1,Graduado,Graduado,4223
+multiclase,E2_mas_semestre2,Desertor,Desertor,2626
+multiclase,E2_mas_semestre2,Desertor,En Curso,416
+multiclase,E2_mas_semestre2,Desertor,Graduado,264
+multiclase,E2_mas_semestre2,En Curso,Desertor,318
+multiclase,E2_mas_semestre2,En Curso,En Curso,1007
+multiclase,E2_mas_semestre2,En Curso,Graduado,628
+multiclase,E2_mas_semestre2,Graduado,Desertor,118
+multiclase,E2_mas_semestre2,Graduado,En Curso,317
+multiclase,E2_mas_semestre2,Graduado,Graduado,4306
+multiclase,E0_con_sin_fecha,Desertor,Desertor,2206
+multiclase,E0_con_sin_fecha,Desertor,En Curso,370
+multiclase,E0_con_sin_fecha,Desertor,Graduado,730
+multiclase,E0_con_sin_fecha,En Curso,Desertor,465
+multiclase,E0_con_sin_fecha,En Curso,En Curso,610
+multiclase,E0_con_sin_fecha,En Curso,Graduado,878
+multiclase,E0_con_sin_fecha,Graduado,Desertor,428
+multiclase,E0_con_sin_fecha,Graduado,En Curso,340
+multiclase,E0_con_sin_fecha,Graduado,Graduado,3973
+multiclase,E1_con_sin_fecha,Desertor,Desertor,2612
+multiclase,E1_con_sin_fecha,Desertor,En Curso,396
+multiclase,E1_con_sin_fecha,Desertor,Graduado,298
+multiclase,E1_con_sin_fecha,En Curso,Desertor,317
+multiclase,E1_con_sin_fecha,En Curso,En Curso,978
+multiclase,E1_con_sin_fecha,En Curso,Graduado,658
+multiclase,E1_con_sin_fecha,Graduado,Desertor,99
+multiclase,E1_con_sin_fecha,Graduado,En Curso,426
+multiclase,E1_con_sin_fecha,Graduado,Graduado,4216
+multiclase,E2_con_sin_fecha,Desertor,Desertor,2676
+multiclase,E2_con_sin_fecha,Desertor,En Curso,390
+multiclase,E2_con_sin_fecha,Desertor,Graduado,240
+multiclase,E2_con_sin_fecha,En Curso,Desertor,248
+multiclase,E2_con_sin_fecha,En Curso,En Curso,1127
+multiclase,E2_con_sin_fecha,En Curso,Graduado,578
+multiclase,E2_con_sin_fecha,Graduado,Desertor,87
+multiclase,E2_con_sin_fecha,Graduado,En Curso,351
+multiclase,E2_con_sin_fecha,Graduado,Graduado,4303

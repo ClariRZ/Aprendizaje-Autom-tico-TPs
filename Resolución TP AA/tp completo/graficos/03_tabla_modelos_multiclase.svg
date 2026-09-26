@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="500" viewBox="0 0 1250 500">
+<rect width="1250" height="500" fill="#ffffff"/>
+<style>
+  .t{font-family:Arial,sans-serif;fill:#2b2b2b}
+  .title{font:700 30px Arial,sans-serif;fill:#2b2b2b}
+  .head{font:700 20px Arial,sans-serif;fill:#ffffff}
+  .cell{font:19px Arial,sans-serif;fill:#2b2b2b}
+  .cellb{font:700 19px Arial,sans-serif;fill:#1f1f1f}
+  .note{font:17px Arial,sans-serif;fill:#666666}
+  .section{font:700 21px Arial,sans-serif;fill:#ffffff}
+</style>
+<text x="55" y="54" class="title">Tabla 3. Desempeño de los modelos multiclase</text>
+<rect x="55" y="78" width="1140" height="5" fill="#4a4a4a"/>
+<rect x="55" y="105" width="1140" height="54" fill="#4a4a4a"/>
+<text x="75" y="140" class="head">Modelo</text><text x="410" y="140" class="head">Accuracy</text><text x="550" y="140" class="head">Precision macro</text><text x="745" y="140" class="head">Recall macro</text><text x="910" y="140" class="head">F1 macro</text><text x="1040" y="140" class="head">ROC-AUC OvR</text>
+
+<rect x="55" y="159" width="1140" height="62" fill="#ffffff"/>
+<text x="75" y="198" class="cell">K-NN</text><text x="425" y="198" class="cell">0,7943</text><text x="580" y="198" class="cell">0,7664</text><text x="770" y="198" class="cell">0,7388</text><text x="930" y="198" class="cell">0,7483</text><text x="1065" y="198" class="cell">0,9034</text>
+
+<rect x="55" y="221" width="1140" height="62" fill="#f1f1f1"/>
+<text x="75" y="260" class="cell">Árbol</text><text x="425" y="260" class="cell">0,8106</text><text x="580" y="260" class="cell">0,7774</text><text x="770" y="260" class="cell">0,7647</text><text x="930" y="260" class="cell">0,7699</text><text x="1065" y="260" class="cell">0,9170</text>
+
+<rect x="55" y="283" width="1140" height="62" fill="#ffffff"/>
+<text x="75" y="322" class="cell">Random Forest</text><text x="425" y="322" class="cellb">0,8196</text><text x="580" y="322" class="cellb">0,7896</text><text x="770" y="322" class="cellb">0,7750</text><text x="930" y="322" class="cellb">0,7808</text><text x="1065" y="322" class="cellb">0,9254</text>
+
+<rect x="55" y="345" width="1140" height="62" fill="#f1f1f1"/>
+<text x="75" y="384" class="cell">AdaBoost</text><text x="425" y="384" class="cell">0,8182</text><text x="580" y="384" class="cell">0,7874</text><text x="770" y="384" class="cell">0,7707</text><text x="930" y="384" class="cell">0,7776</text><text x="1065" y="384" class="cell">0,9219</text>
+
+<text x="55" y="455" class="note">Random Forest obtiene el mejor resultado global en las métricas reportadas.</text>
+</svg>

@@ -1,0 +1,10 @@
+modelo,muestra,filas_disponibles,fold,parametro,valor,otros_parametros,n_ajuste_fold,n_validacion_fold,f1_macro_validacion
+K-NN,train_completo,40000,1,n_neighbors,25,weights=uniform,26666,13334,0.7441265081745841
+K-NN,train_completo,40000,1,n_neighbors,35,weights=uniform,26666,13334,0.7410852588625939
+K-NN,train_completo,40000,1,n_neighbors,51,weights=uniform,26666,13334,0.7372852070265082
+K-NN,train_completo,40000,2,n_neighbors,25,weights=uniform,26667,13333,0.7494030871582047
+K-NN,train_completo,40000,2,n_neighbors,35,weights=uniform,26667,13333,0.7503509709310254
+K-NN,train_completo,40000,2,n_neighbors,51,weights=uniform,26667,13333,0.7492515161635293
+K-NN,train_completo,40000,3,n_neighbors,25,weights=uniform,26667,13333,0.7525509859218834
+K-NN,train_completo,40000,3,n_neighbors,35,weights=uniform,26667,13333,0.7510382331142499
+K-NN,train_completo,40000,3,n_neighbors,51,weights=uniform,26667,13333,0.7492942639246408

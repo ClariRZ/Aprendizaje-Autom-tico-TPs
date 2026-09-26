@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1120" viewBox="0 0 1500 1120">
+<rect width="1500" height="1120" fill="#ffffff"/>
+<style>
+  .t{font-family:Arial,sans-serif;fill:#2b2b2b}
+  .title{font:700 30px Arial,sans-serif;fill:#2b2b2b}
+  .head{font:700 20px Arial,sans-serif;fill:#ffffff}
+  .cell{font:19px Arial,sans-serif;fill:#2b2b2b}
+  .cellb{font:700 19px Arial,sans-serif;fill:#1f1f1f}
+  .note{font:17px Arial,sans-serif;fill:#666666}
+  .section{font:700 21px Arial,sans-serif;fill:#ffffff}
+</style>
+<text x="70" y="58" class="title">Tabla 1. Configuración de los modelos y selección de hiperparámetros</text>
+<rect x="70" y="82" width="1360" height="5" fill="#4a4a4a"/>
+
+<rect x="70" y="115" width="1360" height="48" rx="4" fill="#4a4a4a"/>
+<text x="90" y="147" class="section">a) Clasificación binaria</text>
+<rect x="70" y="172" width="1360" height="52" fill="#5a5a5a"/>
+<text x="90" y="205" class="head">Modelo</text><text x="410" y="205" class="head">Hiperparámetros evaluados</text><text x="1030" y="205" class="head">Configuración seleccionada</text>
+
+<rect x="70" y="224" width="1360" height="82" fill="#ffffff"/>
+<text x="90" y="260" class="cell">Regresión Logística</text><text x="410" y="260" class="cell">C = 0,01; 0,1; 1; 10</text><text x="1030" y="260" class="cellb">C = 0,1</text>
+
+<rect x="70" y="306" width="1360" height="104" fill="#f1f1f1"/>
+<text x="90" y="342" class="cell">SVM (RBF)</text><text x="410" y="342" class="cell">C = 0,1; 1; 10</text><text x="410" y="372" class="cell">gamma = scale; 0,01; 0,1</text>
+<text x="1030" y="342" class="cellb">C = 0,1</text><text x="1030" y="372" class="cellb">gamma = 0,01</text>
+
+<rect x="70" y="410" width="1360" height="116" fill="#ffffff"/>
+<text x="90" y="446" class="cell">Árbol de Decisión</text><text x="410" y="446" class="cell">Profundidad = 2; 4; 6; 8; 12; sin límite</text><text x="410" y="476" class="cell">Mínimo por hoja = 1; 10; 50</text>
+<text x="1030" y="446" class="cellb">Profundidad = 8</text><text x="1030" y="476" class="cellb">Mínimo por hoja = 50</text>
+
+<rect x="70" y="560" width="1360" height="48" rx="4" fill="#4a4a4a"/>
+<text x="90" y="592" class="section">b) Clasificación multiclase</text>
+<rect x="70" y="617" width="1360" height="52" fill="#5a5a5a"/>
+<text x="90" y="650" class="head">Modelo</text><text x="410" y="650" class="head">Hiperparámetros evaluados</text><text x="1030" y="650" class="head">Configuración seleccionada</text>
+
+<rect x="70" y="669" width="1360" height="94" fill="#ffffff"/>
+<text x="90" y="705" class="cell">K-NN</text><text x="410" y="705" class="cell">Vecinos = 3; 5; 9; 15; 25</text><text x="410" y="735" class="cell">Pesos = uniforme; distancia</text>
+<text x="1030" y="705" class="cellb">25 vecinos</text><text x="1030" y="735" class="cellb">Pesos uniformes</text>
+
+<rect x="70" y="763" width="1360" height="108" fill="#f1f1f1"/>
+<text x="90" y="799" class="cell">Árbol de Decisión</text><text x="410" y="799" class="cell">Profundidad = 2; 4; 6; 8; 12; sin límite</text><text x="410" y="829" class="cell">Mínimo por hoja = 1; 10; 50</text>
+<text x="1030" y="799" class="cellb">Profundidad = 12</text><text x="1030" y="829" class="cellb">Mínimo por hoja = 50</text>
+
+<rect x="70" y="871" width="1360" height="120" fill="#ffffff"/>
+<text x="90" y="907" class="cell">Random Forest</text><text x="410" y="907" class="cell">Árboles = 200; 500 · Profundidad = 12; sin límite</text><text x="410" y="937" class="cell">Mínimo por hoja = 1; 50</text>
+<text x="1030" y="907" class="cellb">500 árboles · sin límite</text><text x="1030" y="937" class="cellb">Mínimo por hoja = 1 · max_features = sqrt</text>
+
+<rect x="70" y="991" width="1360" height="76" fill="#f1f1f1"/>
+<text x="90" y="1027" class="cell">AdaBoost</text><text x="410" y="1027" class="cell">Profundidad = 1; 2 · Estimadores = 100; 200; 400 · Tasa = 0,05; 0,1</text>
+<text x="1030" y="1027" class="cellb">Profundidad = 2 · 400 estimadores · Tasa = 0,1</text>
+<text x="70" y="1100" class="note">Selección mediante validación cruzada estratificada sobre train. El test se reservó para la evaluación final.</text>
+</svg>

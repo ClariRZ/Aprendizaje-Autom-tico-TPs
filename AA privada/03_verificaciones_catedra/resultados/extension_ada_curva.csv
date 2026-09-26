@@ -1,0 +1,13 @@
+modelo,muestra,filas_disponibles,fold,parametro,valor,otros_parametros,n_ajuste_fold,n_validacion_fold,f1_macro_validacion,f1_macro_ajuste
+AdaBoost,train_12000,12000,1,n_estimators,100,max_depth=2; learning_rate=0.1,8000,4000,0.7694251703253482,0.7669806698724425
+AdaBoost,train_12000,12000,1,n_estimators,200,max_depth=2; learning_rate=0.1,8000,4000,0.7723804247894673,0.773366407915632
+AdaBoost,train_12000,12000,1,n_estimators,400,max_depth=2; learning_rate=0.1,8000,4000,0.7745636743908103,0.7792251515815662
+AdaBoost,train_12000,12000,1,n_estimators,600,max_depth=2; learning_rate=0.1,8000,4000,0.7750570584950555,0.7811400724081818
+AdaBoost,train_12000,12000,2,n_estimators,100,max_depth=2; learning_rate=0.1,8000,4000,0.7468928319789471,0.7664232115878663
+AdaBoost,train_12000,12000,2,n_estimators,200,max_depth=2; learning_rate=0.1,8000,4000,0.7563536151807154,0.7781489169375514
+AdaBoost,train_12000,12000,2,n_estimators,400,max_depth=2; learning_rate=0.1,8000,4000,0.7597427585184929,0.7840511332843624
+AdaBoost,train_12000,12000,2,n_estimators,600,max_depth=2; learning_rate=0.1,8000,4000,0.7652779177978434,0.7848362493996351
+AdaBoost,train_12000,12000,3,n_estimators,100,max_depth=2; learning_rate=0.1,8000,4000,0.7805905730332016,0.7657319665688456
+AdaBoost,train_12000,12000,3,n_estimators,200,max_depth=2; learning_rate=0.1,8000,4000,0.7860946506447576,0.7681002818104571
+AdaBoost,train_12000,12000,3,n_estimators,400,max_depth=2; learning_rate=0.1,8000,4000,0.7896764948089023,0.7707651684460949
+AdaBoost,train_12000,12000,3,n_estimators,600,max_depth=2; learning_rate=0.1,8000,4000,0.7910130517736293,0.7741257762332913

@@ -1,0 +1,29 @@
+Variable,Descripción,Tipo de dato,Valores posibles
+Estudios_máximos_antes_de_la_inscripción,Nivel educativo máximo antes de inscribirse,Categórica,5 categorías
+estado_civil,Estado civil al momento de inscripción,Categórica,6 categorías
+modo_aplicacion,Vía de acceso/admisión,Categórica,4 categorías
+sexo,Sexo del estudiante,Categórica,Femenino; Masculino
+desplazado,Debió mudarse de localidad para cursar,Categórica,No; Sí
+target,Situación académica final,Categórica,Desertor; En Curso; Graduado
+Carrera,Carrera universitaria,Categórica,15 categorías
+Asistencia_diurna/nocturna,Turno de cursada,Categórica,Nocturna; Diurna
+Cualificación_promedio_de_estudios_previos,Nota previa 0-100,Numérica,48-95 aprox.
+Puntaje_en_examen_de_ingreso,Puntaje de ingreso 0-100,Numérica,48-95 aprox.
+Necesidades_educativas_especiales,Necesidades especiales declaradas,Categórica,No; Sí
+Tiene_deuda,Deuda con la institución,Categórica,No; Sí
+Pago_de_matrícula_al_día,Matrícula al día,Categórica,No; Sí
+Poseedor_de_Beca,Posee beca,Categórica,No; Sí
+Edad_al_momento_de_la_inscripción,Edad al inscribirse,Numérica,17-70
+Estudiante_Internacional,Estudiante internacional,Categórica,No; Sí
+Unidades_curriculares_1er_semestre_(inscrito),Unidades inscriptas 1er semestre,Numérica,0-26
+Cantidad_de_evaluaciones_en_el_1er_semestre,Evaluaciones 1er semestre,Numérica,0-45
+Unidades_curriculares_1er_semestre_(aprobadas),Unidades aprobadas 1er semestre,Numérica,0-26
+Nota_promedio_en_el_1er_semestre,Nota promedio 1er semestre 0-100,Numérica,0-100
+Unidades_curriculares_2do_semestre_(inscrito),Unidades inscriptas 2do semestre,Numérica,0-23
+Cantidad_de_evaluaciones_en_el_2do_semestre_,Evaluaciones 2do semestre,Numérica,0-33
+Unidades_curriculares_2do_semestre_(aprobadas),Unidades aprobadas 2do semestre,Numérica,0-20
+Nota_promedio_en_el_2do_semestre,Nota promedio 2do semestre 0-100,Numérica,0-100
+Demanda_Cog_Padre,Demanda cognitiva estimada ocupación padre,Categórica ordinal,5 niveles
+Demanda_Cog_Madre,Demanda cognitiva estimada ocupación madre,Categórica ordinal,5 niveles
+Ingresos_Padre,Nivel de ingresos estimado padre,Categórica ordinal,5 niveles
+Ingresos_Madre,Nivel de ingresos estimado madre,Categórica ordinal,5 niveles

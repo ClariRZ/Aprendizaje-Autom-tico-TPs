@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;fill:#222}.title{font-size:27px;font-weight:700}.sub{font-size:15px;fill:#555}.lab{font-size:13px}.grid{stroke:#e5e5e5}</style>
+<rect width="100%" height="100%" fill="white"/>
+<text x="50" y="44" class="title">En Curso sigue siendo la clase más difícil</text>
+<text x="50" y="70" class="sub">F1 por clase: Árbol vs ensambles</text>
+<line x1="100" y1="410" x2="850" y2="410" stroke="#777"/>
+<line x1="100" y1="110" x2="100" y2="410" stroke="#777"/>
+<line x1="100" y1="335" x2="850" y2="335" class="grid"/>
+<line x1="100" y1="260" x2="850" y2="260" class="grid"/>
+<line x1="100" y1="185" x2="850" y2="185" class="grid"/>
+<rect x="160" y="171.68000000000004" width="34" height="238.31999999999996" fill="#4e79a7"/><rect x="202" y="168.26000000000002" width="34" height="241.73999999999998" fill="#59a14f"/><rect x="244" y="166.28000000000003" width="34" height="243.71999999999997" fill="#e15759"/><text x="220" y="445" text-anchor="middle" class="lab">Desertor</text><rect x="400" y="326.06" width="34" height="83.94" fill="#4e79a7"/><rect x="442" y="314.24" width="34" height="95.75999999999999" fill="#59a14f"/><rect x="484" y="319.64" width="34" height="90.36000000000001" fill="#e15759"/><text x="460" y="445" text-anchor="middle" class="lab">En Curso</text><rect x="640" y="156.43999999999997" width="34" height="253.56000000000003" fill="#4e79a7"/><rect x="682" y="152.12" width="34" height="257.88" fill="#59a14f"/><rect x="724" y="154.51999999999998" width="34" height="255.48000000000002" fill="#e15759"/><text x="700" y="445" text-anchor="middle" class="lab">Graduado</text>
+<rect x="270" y="480" width="14" height="14" fill="#4e79a7"/><text x="292" y="492" class="lab">Árbol</text>
+<rect x="375" y="480" width="14" height="14" fill="#59a14f"/><text x="397" y="492" class="lab">Random Forest</text>
+<rect x="530" y="480" width="14" height="14" fill="#e15759"/><text x="552" y="492" class="lab">AdaBoost</text>
+</svg>

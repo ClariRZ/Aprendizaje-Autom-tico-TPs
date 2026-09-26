@@ -1,0 +1,10 @@
+{
+  "dataset_sha256": "a0a75e40e32ae336c24fad49fb271da45429593e1fccc16f08c397a1f3bbe09d",
+  "filas_totales": 50000,
+  "train": 40000,
+  "test_no_usado": 10000,
+  "split": "estratificado por tres clases; random_state=42; test_size=0.20",
+  "folds": "StratifiedKFold con shuffle=True y random_state=42; preprocesamiento ajustado dentro de cada fold",
+  "scores": "ROC-AUC binaria / F1 macro multiclase; OvR y OvO sobre mismas probabilidades por fold",
+  "cuidado": "la base se analizó antes; sensibilidad interna, no validación externa"
+}

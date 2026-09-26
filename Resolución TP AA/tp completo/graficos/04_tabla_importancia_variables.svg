@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1020" viewBox="0 0 1400 1020">
+<rect width="1400" height="1020" fill="#ffffff"/>
+<style>
+  .t{font-family:Arial,sans-serif;fill:#2b2b2b}
+  .title{font:700 30px Arial,sans-serif;fill:#2b2b2b}
+  .head{font:700 20px Arial,sans-serif;fill:#ffffff}
+  .cell{font:19px Arial,sans-serif;fill:#2b2b2b}
+  .cellb{font:700 19px Arial,sans-serif;fill:#1f1f1f}
+  .note{font:17px Arial,sans-serif;fill:#666666}
+  .section{font:700 21px Arial,sans-serif;fill:#ffffff}
+</style>
+<text x="55" y="54" class="title">Tabla 4. Principales variables por caída media de F1 macro al permutar</text>
+<rect x="55" y="78" width="1290" height="5" fill="#4a4a4a"/>
+<rect x="55" y="105" width="1290" height="54" fill="#4a4a4a"/>
+<text x="75" y="140" class="head">Ranking</text><text x="190" y="140" class="head">Variable</text><text x="660" y="140" class="head">Bloque</text><text x="1030" y="140" class="head">Importancia media</text><text x="1250" y="140" class="head">SD</text>
+
+<rect x="55" y="159" width="1290" height="61" fill="#ffffff"/>
+ <text x="95" y="197" class="cell">1</text><text x="190" y="197" class="cell">Aprobadas 2.º semestre</text><text x="660" y="197" class="cell">Académico</text><text x="1070" y="197" class="cellb">0,1004</text><text x="1250" y="197" class="cell">0,0087</text>
+<rect x="55" y="220" width="1290" height="61" fill="#f1f1f1"/>
+ <text x="95" y="258" class="cell">2</text><text x="190" y="258" class="cell">Matrícula al día</text><text x="660" y="258" class="cell">Administrativo/económico</text><text x="1070" y="258" class="cellb">0,0360</text><text x="1250" y="258" class="cell">0,0021</text>
+<rect x="55" y="281" width="1290" height="61" fill="#ffffff"/>
+ <text x="95" y="319" class="cell">3</text><text x="190" y="319" class="cell">Nota 2.º semestre</text><text x="660" y="319" class="cell">Académico</text><text x="1070" y="319" class="cell">0,0226</text><text x="1250" y="319" class="cell">0,0025</text>
+<rect x="55" y="342" width="1290" height="61" fill="#f1f1f1"/>
+ <text x="95" y="380" class="cell">4</text><text x="190" y="380" class="cell">Evaluaciones 2.º semestre</text><text x="660" y="380" class="cell">Académico</text><text x="1070" y="380" class="cell">0,0121</text><text x="1250" y="380" class="cell">0,0020</text>
+<rect x="55" y="403" width="1290" height="61" fill="#ffffff"/>
+ <text x="95" y="441" class="cell">5</text><text x="190" y="441" class="cell">Aprobadas 1.er semestre</text><text x="660" y="441" class="cell">Académico</text><text x="1070" y="441" class="cell">0,0115</text><text x="1250" y="441" class="cell">0,0026</text>
+<rect x="55" y="464" width="1290" height="61" fill="#f1f1f1"/>
+ <text x="95" y="502" class="cell">6</text><text x="190" y="502" class="cell">Beca</text><text x="660" y="502" class="cell">Administrativo/económico</text><text x="1070" y="502" class="cell">0,0095</text><text x="1250" y="502" class="cell">0,0020</text>
+<rect x="55" y="525" width="1290" height="61" fill="#ffffff"/>
+ <text x="95" y="563" class="cell">7</text><text x="190" y="563" class="cell">Evaluaciones 1.er semestre</text><text x="660" y="563" class="cell">Académico</text><text x="1070" y="563" class="cell">0,0042</text><text x="1250" y="563" class="cell">0,0015</text>
+<rect x="55" y="586" width="1290" height="61" fill="#f1f1f1"/>
+ <text x="95" y="624" class="cell">8</text><text x="190" y="624" class="cell">Carrera</text><text x="660" y="624" class="cell">Ingreso/contexto</text><text x="1070" y="624" class="cell">0,0024</text><text x="1250" y="624" class="cell">0,0015</text>
+<rect x="55" y="647" width="1290" height="61" fill="#ffffff"/>
+ <text x="95" y="685" class="cell">9</text><text x="190" y="685" class="cell">Sexo</text><text x="660" y="685" class="cell">Ingreso/contexto</text><text x="1070" y="685" class="cell">0,0021</text><text x="1250" y="685" class="cell">0,0017</text>
+<rect x="55" y="708" width="1290" height="61" fill="#f1f1f1"/>
+ <text x="95" y="746" class="cell">10</text><text x="190" y="746" class="cell">Nota 1.er semestre</text><text x="660" y="746" class="cell">Académico</text><text x="1070" y="746" class="cell">0,0018</text><text x="1250" y="746" class="cell">0,0017</text>
+<rect x="55" y="769" width="1290" height="61" fill="#ffffff"/>
+ <text x="95" y="807" class="cell">11</text><text x="190" y="807" class="cell">Edad</text><text x="660" y="807" class="cell">Ingreso/contexto</text><text x="1070" y="807" class="cell">0,0016</text><text x="1250" y="807" class="cell">0,0011</text>
+<rect x="55" y="830" width="1290" height="61" fill="#f1f1f1"/>
+ <text x="95" y="868" class="cell">12</text><text x="190" y="868" class="cell">Deuda</text><text x="660" y="868" class="cell">Administrativo/económico</text><text x="1070" y="868" class="cell">0,0012</text><text x="1250" y="868" class="cell">0,0006</text>
+
+<text x="55" y="955" class="note">Importancia por permutación: una caída mayor de F1 macro indica mayor dependencia del modelo respecto del predictor.</text>
+</svg>

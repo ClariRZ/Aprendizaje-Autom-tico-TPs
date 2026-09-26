@@ -1,0 +1,37 @@
+tarea,etapa,fold,criterio,score_validacion,config_fija
+binaria,E0_entrada_candidata,1,roc_auc,0.7891089566644558,C=0.1
+binaria,E0_entrada_candidata,2,roc_auc,0.7989044619662746,C=0.1
+binaria,E0_entrada_candidata,3,roc_auc,0.7942356870074248,C=0.1
+binaria,E1_mas_semestre1,1,roc_auc,0.9242764820079437,C=0.1
+binaria,E1_mas_semestre1,2,roc_auc,0.9277613150523366,C=0.1
+binaria,E1_mas_semestre1,3,roc_auc,0.9265146002166618,C=0.1
+binaria,E2_mas_semestre2,1,roc_auc,0.9422599352896756,C=0.1
+binaria,E2_mas_semestre2,2,roc_auc,0.9417647821379004,C=0.1
+binaria,E2_mas_semestre2,3,roc_auc,0.9424462645514201,C=0.1
+binaria,E0_con_sin_fecha,1,roc_auc,0.8544566679123733,C=0.1
+binaria,E0_con_sin_fecha,2,roc_auc,0.86247425104343,C=0.1
+binaria,E0_con_sin_fecha,3,roc_auc,0.860654881085898,C=0.1
+binaria,E1_con_sin_fecha,1,roc_auc,0.9376419846302305,C=0.1
+binaria,E1_con_sin_fecha,2,roc_auc,0.9415104063403948,C=0.1
+binaria,E1_con_sin_fecha,3,roc_auc,0.9395328282500884,C=0.1
+binaria,E2_con_sin_fecha,1,roc_auc,0.9499741497239045,C=0.1
+binaria,E2_con_sin_fecha,2,roc_auc,0.9504429557666987,C=0.1
+binaria,E2_con_sin_fecha,3,roc_auc,0.9504697016911507,C=0.1
+multiclase,E0_entrada_candidata,1,f1_macro,0.5507942337182324,"depth=8, leaf=50"
+multiclase,E0_entrada_candidata,2,f1_macro,0.5520895174489785,"depth=8, leaf=50"
+multiclase,E0_entrada_candidata,3,f1_macro,0.5443183894577993,"depth=8, leaf=50"
+multiclase,E1_mas_semestre1,1,f1_macro,0.7043931425205291,"depth=8, leaf=50"
+multiclase,E1_mas_semestre1,2,f1_macro,0.7182691267354819,"depth=8, leaf=50"
+multiclase,E1_mas_semestre1,3,f1_macro,0.7100118143710326,"depth=8, leaf=50"
+multiclase,E2_mas_semestre2,1,f1_macro,0.7521277713428737,"depth=8, leaf=50"
+multiclase,E2_mas_semestre2,2,f1_macro,0.7504769518760406,"depth=8, leaf=50"
+multiclase,E2_mas_semestre2,3,f1_macro,0.7538842906186322,"depth=8, leaf=50"
+multiclase,E0_con_sin_fecha,1,f1_macro,0.5887612816896365,"depth=8, leaf=50"
+multiclase,E0_con_sin_fecha,2,f1_macro,0.5701103726598116,"depth=8, leaf=50"
+multiclase,E0_con_sin_fecha,3,f1_macro,0.528611270742815,"depth=8, leaf=50"
+multiclase,E1_con_sin_fecha,1,f1_macro,0.7350464357581208,"depth=8, leaf=50"
+multiclase,E1_con_sin_fecha,2,f1_macro,0.7422232712930296,"depth=8, leaf=50"
+multiclase,E1_con_sin_fecha,3,f1_macro,0.7395474970720631,"depth=8, leaf=50"
+multiclase,E2_con_sin_fecha,1,f1_macro,0.7710707559800785,"depth=8, leaf=50"
+multiclase,E2_con_sin_fecha,2,f1_macro,0.7684510356328919,"depth=8, leaf=50"
+multiclase,E2_con_sin_fecha,3,f1_macro,0.7686805471166166,"depth=8, leaf=50"

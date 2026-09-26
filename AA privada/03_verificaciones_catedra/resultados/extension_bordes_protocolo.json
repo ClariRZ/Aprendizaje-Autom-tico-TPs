@@ -1,0 +1,8 @@
+{
+  "dataset_sha256": "a0a75e40e32ae336c24fad49fb271da45429593e1fccc16f08c397a1f3bbe09d",
+  "sklearn_version": "1.8.0",
+  "split": "80/20, stratify=target, random_state=42; test sin utilizar",
+  "cv": "StratifiedKFold(3, shuffle=True, random_state=42)",
+  "seleccion": "sensibilidad posterior a la grilla original; no se actualiza el test",
+  "nota": "si la validación sigue subiendo en un extremo, no es evidencia de óptimo"
+}

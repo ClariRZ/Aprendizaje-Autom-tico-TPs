@@ -1,0 +1,54 @@
+{
+  "source_file_name": "dataset_TP1_2026.csv",
+  "source_sha256": "a0a75e40e32ae336c24fad49fb271da45429593e1fccc16f08c397a1f3bbe09d",
+  "n_total_metadata": 50000,
+  "n_train": 40000,
+  "n_test_reservado": 10000,
+  "split": {
+    "test_size": 0.2,
+    "stratify": "target",
+    "random_state": 42,
+    "sklearn_train_test_split": true
+  },
+  "train_index_sha256": "56986c6a23bd20fbcee7571b16e0171b21d8962cf962ecead6313633e464cf98",
+  "no_test_target_analysis": true,
+  "versiones": {
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "scikit_learn": "1.8.0",
+    "matplotlib": "3.10.8"
+  },
+  "numericas": [
+    "Cualificación_promedio_de_estudios_previos",
+    "Puntaje_en_examen_de_ingreso",
+    "Edad_al_momento_de_la_inscripción",
+    "Unidades_curriculares_1er_semestre_(inscrito)",
+    "Cantidad_de_evaluaciones_en_el_1er_semestre",
+    "Unidades_curriculares_1er_semestre_(aprobadas)",
+    "Nota_promedio_en_el_1er_semestre",
+    "Unidades_curriculares_2do_semestre_(inscrito)",
+    "Cantidad_de_evaluaciones_en_el_2do_semestre_",
+    "Unidades_curriculares_2do_semestre_(aprobadas)",
+    "Nota_promedio_en_el_2do_semestre"
+  ],
+  "categoricas": [
+    "Estudios_máximos_antes_de_la_inscripción",
+    "estado_civil",
+    "modo_aplicacion",
+    "sexo",
+    "desplazado",
+    "Carrera",
+    "Asistencia_diurna/nocturna",
+    "Necesidades_educativas_especiales",
+    "Tiene_deuda",
+    "Pago_de_matrícula_al_día",
+    "Poseedor_de_Beca",
+    "Estudiante_Internacional",
+    "Demanda_Cog_Padre",
+    "Demanda_Cog_Madre",
+    "Ingresos_Padre",
+    "Ingresos_Madre"
+  ],
+  "nota": "La exploración del target y predictores sólo usa train; test se reserva para evaluación final."
+}

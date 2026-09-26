@@ -1,0 +1,9 @@
+primer_semestre,segundo_semestre,n,pct_desertor,ic95_desertor_inf_pct,ic95_desertor_sup_pct,pct_en_curso,pct_graduado
+0_aprobadas_con_inscripcion,0_aprobadas_con_inscripcion,6697,97.2376,96.8171,97.6038,2.46379,0.298641
+0_aprobadas_con_inscripcion,0_inscritas,1,100,20.6543,100,0,0
+0_aprobadas_con_inscripcion,al_menos_1_aprobada,217,64.0553,57.4774,70.1442,34.1014,1.84332
+0_inscritas,0_aprobadas_con_inscripcion,1,0,0,79.3457,0,100
+0_inscritas,0_inscritas,1381,75.0905,72.742,77.2999,6.44461,18.4649
+al_menos_1_aprobada,0_aprobadas_con_inscripcion,1545,92.4272,91.0002,93.6437,6.92557,0.647249
+al_menos_1_aprobada,0_inscritas,1,100,20.6543,100,0,0
+al_menos_1_aprobada,al_menos_1_aprobada,30157,13.6121,13.2297,14.0038,24.4587,61.9292

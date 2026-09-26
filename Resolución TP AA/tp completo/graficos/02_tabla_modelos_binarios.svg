@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="500" viewBox="0 0 1250 500">
+<rect width="1250" height="500" fill="#ffffff"/>
+<style>
+  .t{font-family:Arial,sans-serif;fill:#2b2b2b}
+  .title{font:700 30px Arial,sans-serif;fill:#2b2b2b}
+  .head{font:700 20px Arial,sans-serif;fill:#ffffff}
+  .cell{font:19px Arial,sans-serif;fill:#2b2b2b}
+  .cellb{font:700 19px Arial,sans-serif;fill:#1f1f1f}
+  .note{font:17px Arial,sans-serif;fill:#666666}
+  .section{font:700 21px Arial,sans-serif;fill:#ffffff}
+</style>
+<text x="55" y="54" class="title">Tabla 2. Desempeño final de los modelos binarios</text>
+<rect x="55" y="78" width="1140" height="5" fill="#4a4a4a"/>
+<rect x="55" y="105" width="1140" height="54" fill="#4a4a4a"/>
+<text x="75" y="140" class="head">Modelo</text><text x="430" y="140" class="head">Accuracy</text><text x="585" y="140" class="head">Precision</text><text x="735" y="140" class="head">Recall</text><text x="875" y="140" class="head">F1</text><text x="1015" y="140" class="head">ROC-AUC</text>
+
+<rect x="55" y="159" width="1140" height="62" fill="#ffffff"/>
+<text x="75" y="198" class="cell">Regresión Logística</text><text x="445" y="198" class="cellb">0,9066</text><text x="600" y="198" class="cell">0,9004</text><text x="750" y="198" class="cellb">0,8067</text><text x="890" y="198" class="cellb">0,8510</text><text x="1030" y="198" class="cell">0,9506</text>
+
+<rect x="55" y="221" width="1140" height="62" fill="#f1f1f1"/>
+<text x="75" y="260" class="cell">SVM</text><text x="445" y="260" class="cell">0,8979</text><text x="600" y="260" class="cellb">0,9150</text><text x="750" y="260" class="cell">0,7619</text><text x="890" y="260" class="cell">0,8315</text><text x="1030" y="260" class="cell">0,9460</text>
+
+<rect x="55" y="283" width="1140" height="62" fill="#ffffff"/>
+<text x="75" y="322" class="cell">Árbol</text><text x="445" y="322" class="cell">0,9057</text><text x="600" y="322" class="cell">0,9064</text><text x="750" y="322" class="cell">0,7970</text><text x="890" y="322" class="cell">0,8482</text><text x="1030" y="322" class="cell">0,9440</text>
+
+<rect x="55" y="345" width="1140" height="62" fill="#f1f1f1"/>
+<text x="75" y="384" class="cell">Soft Voting</text><text x="445" y="384" class="cell">0,9053</text><text x="600" y="384" class="cell">0,9080</text><text x="750" y="384" class="cell">0,7940</text><text x="890" y="384" class="cell">0,8472</text><text x="1030" y="384" class="cellb">0,9514</text>
+
+<text x="55" y="455" class="note">Métricas calculadas sobre las mismas 10.000 observaciones de test. Los mejores valores por columna se muestran en negrita.</text>
+</svg>

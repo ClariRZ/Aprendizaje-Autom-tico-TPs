@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="500.4pt" height="219.747734pt" viewBox="0 0 500.4 219.747734" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-26T12:49:44.329044</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 219.747734 
+L 500.4 219.747734 
+L 500.4 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 131.4 195.12 
+L 493.2 195.12 
+L 493.2 67.752 
+L 131.4 67.752 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 135.018 70.72392 
+L 248.382 70.72392 
+L 248.382 107.23608 
+L 135.018 107.23608 
+z
+" clip-path="url(#p013ce21885)" style="fill: #f2f2f2; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 255.618 70.72392 
+L 368.982 70.72392 
+L 368.982 107.23608 
+L 255.618 107.23608 
+z
+" clip-path="url(#p013ce21885)" style="fill: #f4dee0; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 376.218 70.72392 
+L 489.582 70.72392 
+L 489.582 107.23608 
+L 376.218 107.23608 
+z
+" clip-path="url(#p013ce21885)" style="fill: #fafafa; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 135.018 113.17992 
+L 248.382 113.17992 
+L 248.382 149.69208 
+L 135.018 149.69208 
+z
+" clip-path="url(#p013ce21885)" style="fill: #f4dee0; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 255.618 113.17992 
+L 368.982 113.17992 
+L 368.982 149.69208 
+L 255.618 149.69208 
+z
+" clip-path="url(#p013ce21885)" style="fill: #f2f2f2; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 376.218 113.17992 
+L 489.582 113.17992 
+L 489.582 149.69208 
+L 376.218 149.69208 
+z
+" clip-path="url(#p013ce21885)" style="fill: #f4dee0; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 135.018 155.63592 
+L 248.382 155.63592 
+L 248.382 192.14808 
+L 135.018 192.14808 
+z
+" clip-path="url(#p013ce21885)" style="fill: #fafafa; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 255.618 155.63592 
+L 368.982 155.63592 
+L 368.982 192.14808 
+L 255.618 192.14808 
+z
+" clip-path="url(#p013ce21885)" style="fill: #fafafa; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 376.218 155.63592 
+L 489.582 155.63592 
+L 489.582 192.14808 
+L 376.218 192.14808 
+z
+" clip-path="url(#p013ce21885)" style="fill: #f2f2f2; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1"/>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #474747" x="191.7" y="57.672313" transform="rotate(-0 191.7 57.672313)">Desertor</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2"/>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #474747" x="312.3" y="57.672313" transform="rotate(-0 312.3 57.672313)">En Curso</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3"/>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #474747" x="432.9" y="57.672313" transform="rotate(-0 432.9 57.672313)">Graduado</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_4"/>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #474747" x="123.4" y="92.779219" transform="rotate(-0 123.4 92.779219)">Desertor · n=3.306</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_5"/>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #474747" x="123.4" y="135.235219" transform="rotate(-0 123.4 135.235219)">En Curso · n=1.953</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_6"/>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #474747" x="123.4" y="177.691219" transform="rotate(-0 123.4 177.691219)">Graduado · n=4.741</text>
+     </g>
+    </g>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #474747" x="191.7" y="91.123578" transform="rotate(-0 191.7 91.123578)">80,8 %</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #474747" x="191.7" y="100.803758" transform="rotate(-0 191.7 100.803758)">2.670 casos</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bb343c" x="312.3" y="91.123578" transform="rotate(-0 312.3 91.123578)">12,0 %</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #474747" x="312.3" y="100.803758" transform="rotate(-0 312.3 100.803758)">397 casos</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bb343c" x="432.9" y="91.123578" transform="rotate(-0 432.9 91.123578)">7,2 %</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #474747" x="432.9" y="100.803758" transform="rotate(-0 432.9 100.803758)">239 casos</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bb343c" x="191.7" y="133.579578" transform="rotate(-0 191.7 133.579578)">11,1 %</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #474747" x="191.7" y="143.259758" transform="rotate(-0 191.7 143.259758)">216 casos</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #474747" x="312.3" y="133.579578" transform="rotate(-0 312.3 133.579578)">59,8 %</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #474747" x="312.3" y="143.259758" transform="rotate(-0 312.3 143.259758)">1.168 casos</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bb343c" x="432.9" y="133.579578" transform="rotate(-0 432.9 133.579578)">29,1 %</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #474747" x="432.9" y="143.259758" transform="rotate(-0 432.9 143.259758)">569 casos</text>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bb343c" x="191.7" y="176.035578" transform="rotate(-0 191.7 176.035578)">1,5 %</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #474747" x="191.7" y="185.715758" transform="rotate(-0 191.7 185.715758)">69 casos</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bb343c" x="312.3" y="176.035578" transform="rotate(-0 312.3 176.035578)">6,6 %</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #474747" x="312.3" y="185.715758" transform="rotate(-0 312.3 185.715758)">314 casos</text>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #474747" x="432.9" y="176.035578" transform="rotate(-0 432.9 176.035578)">91,9 %</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #474747" x="432.9" y="185.715758" transform="rotate(-0 432.9 185.715758)">4.358 casos</text>
+   </g>
+  </g>
+  <g id="text_25">
+   <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #474747" x="7.2" y="18.397813" transform="rotate(-0 7.2 18.397813)">¿Qué estado predice el bosque para cada estado real?</text>
+  </g>
+  <g id="text_26">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #474747" x="7.2" y="30.168" transform="rotate(-0 7.2 30.168)">Columnas: predicción   ·   Filas: estado registrado en test</text>
+  </g>
+  <g id="text_27">
+   <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #474747" x="7.2" y="210.78" transform="rotate(-0 7.2 210.78)">Cada fila suma 100 %. Rojo: errores; los conteos provienen de 10.000 casos de test.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p013ce21885">
+   <rect x="131.4" y="67.752" width="361.8" height="127.368"/>
+  </clipPath>
+ </defs>
+</svg>
