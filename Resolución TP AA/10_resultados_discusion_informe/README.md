@@ -6,7 +6,7 @@
 
 ## Documento final
 
-La resolución adoptada para leer, corregir y editar está en [entrega_final/TP1.md](../../entrega_final/TP1.md), versión Markdown del PDF elegido. Sus secciones siguen el orden: introducción e hipótesis; datos, tareas y método; EDA; resultados binarios; complejidad y controles; multiclase; disponibilidad temporal; sensibilidad a repetidos; importancia; discusión; limitaciones y conclusión. Mantiene tablas Markdown y figuras SVG editables en `entrega_final/figuras/`.
+La resolución adoptada para leer, corregir y editar está en [entrega_final/TP1.md](../../entrega_final/TP1.md), el informe final editable. Sus secciones siguen el orden: introducción e hipótesis; datos, tareas y método; EDA; resultados binarios; complejidad y controles; multiclase; disponibilidad temporal; sensibilidad a repetidos; importancia; discusión; limitaciones y conclusión. Mantiene tablas Markdown y figuras SVG editables en `entrega_final/figuras/`.
 
 La discusión debe distinguir tres tipos de evidencia:
 
@@ -22,4 +22,4 @@ La conclusión del informe habla del **primer año completo** cuando usa las 27 
 python "Resolución TP AA/10_resultados_discusion_informe/10_borrador.py"
 ```
 
-Produce `Resolución TP AA/resultados/borrador_resultados.md` a partir de tablas previas **si existen**. Es un borrador automático de presentación, no genera ni sustituye el informe elegido: cuenta la distribución de clases sobre la base completa de 50.000, mientras el EDA final y sus porcentajes del informe se basan en 40.000 de train. Para cifras de las hipótesis y texto final, consultá `entrega_final/TP1.md` y los resultados originales de cada paso. La figura 4 (curvas multiclase), figura 5 (Dummy y folds) y tabla 3 (grillas ampliadas) usan `AA privada/03_verificaciones_catedra/`; la figura 7 (bloques por momento de información) usa `AA privada/02_alternativa_temporal/modelos/comparar_etapas.py`. Ningún script de esta carpeta reproduce por sí solo todas las figuras del PDF.
+Produce `Resolución TP AA/resultados/borrador_resultados.md` a partir de tablas previas **si existen**. Es un borrador automático de presentación, no genera ni sustituye el informe elegido: cuenta la distribución de clases sobre la base completa de 50.000, mientras el EDA final y sus porcentajes del informe se basan en 40.000 de train. Para cifras de las hipótesis y texto final, consultá `entrega_final/TP1.md` y los resultados originales de cada paso. La figura 4 (curvas multiclase), figura 5 (Dummy y folds) y tabla 3 (grillas ampliadas) usan `AA privada/03_verificaciones_catedra/`; la figura 7 (bloques por momento de información) usa `AA privada/02_alternativa_temporal/modelos/comparar_etapas.py`. Ningún script de esta carpeta reproduce por sí solo todas las figuras del informe final.
