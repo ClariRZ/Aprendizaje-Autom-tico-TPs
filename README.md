@@ -2,8 +2,9 @@
 
 ## Empezar por la versión final
 
-La [resolución final editable](entrega_final/TP1.md) reproduce el informe
-entregado en [PDF](entrega_final/TP1_desercion.pdf). Las figuras están junto al
+La [resolución final editable](entrega_final/TP1.md) parte del informe
+entregado en [PDF](entrega_final/TP1_desercion.pdf) e incorpora una precisión
+sobre el efecto pequeño de excluir perfiles repetidos. Las figuras están junto al
 Markdown para poder corregir texto, tablas y referencias directamente en Git.
 El PDF se conserva como referencia de la versión cerrada. La lista de integrantes
 figura como `[completar]` porque así aparece en el original.

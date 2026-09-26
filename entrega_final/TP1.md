@@ -201,7 +201,7 @@ Recalculamos las métricas de los mismos modelos del análisis por bloques exclu
 
 **Figura 7.** Puntaje medio en tres folds de entrenamiento al acumular bloques de variables. El tramo rojo agrega las siete variables sin fecha de captura documentada.
 
-Las diferencias (0,0005 a 0,0007) indican que las coincidencias exactas no inflan el desempeño. El filtro no detecta perfiles casi idénticos ni repeticiones en subconjuntos de variables, y no corrige la exposición previa del test.
+Las diferencias (0,0005 a 0,0007) muestran que excluir coincidencias exactas cambia poco estas métricas en los modelos evaluados. Esto no demuestra ausencia de sesgo por perfiles repetidos. El filtro no detecta perfiles casi idénticos ni repeticiones en subconjuntos de variables, y no corrige la exposición previa del test.
 
 ### 3.8. Importancia de atributos
 
