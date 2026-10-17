@@ -53,5 +53,19 @@
       "media_cv": 0.7697556104043253
     }
   },
-  "alcance": "Reproducción de las métricas finales, tres grillas y sensibilidad de folds con modelos fijos; no se repitieron todas las otras grillas ni todas las permutaciones. Test exploratorio, previamente observado."
+  "alcance": "Reproducción de las métricas finales, tres grillas y sensibilidad de folds con modelos fijos; no se repitieron todas las otras grillas ni todas las permutaciones. Test exploratorio, previamente observado.",
+  "procedencia_documentada": {
+    "generador": "00_base_de_datos/generar_dataset_tp1.py",
+    "generador_sha256": "3662e401085ba0c172a9f9edbe918d3835bdc7345f97ae4bfacdc80f76198193",
+    "archivo_generador_copiado_sin_cambios": true,
+    "filas_objetivo_por_defecto": 50000,
+    "semilla_por_defecto": 42,
+    "estratos": [
+      "target",
+      "Carrera"
+    ],
+    "csv_adjunto_igual_a_base_del_repositorio": true,
+    "generacion_desde_train_crudo_reproducida_en_esta_revision": false,
+    "nota": "El generador documenta las operaciones previstas; no se atribuye su ejecución o autoría a una persona o institución."
+  }
 }
