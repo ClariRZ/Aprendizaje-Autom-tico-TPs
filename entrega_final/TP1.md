@@ -110,7 +110,7 @@ La deserción fue **93,79 %** entre quienes no tenían la matrícula al día (n=
 
 ![Figura 2b. Tasa de Desertor por grupo administrativo](figuras/figura_02b.svg)
 
-*(b) Tasa de deserción por grupo administrativo; la línea marca la tasa general.*
+*(b) Porcentaje con etiqueta Desertor dentro de cada grupo administrativo: rojo = Desertor; gris = En Curso o Graduado. Cada barra suma 100 %; n indica el tamaño del grupo.*
 
 **Figura 2.** Asociaciones exploratorias en entrenamiento (n=40.000). Cada porcentaje utiliza como denominador su propio grupo.
 

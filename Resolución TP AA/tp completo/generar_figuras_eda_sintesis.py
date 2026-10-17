@@ -89,26 +89,34 @@ def main():
         sub = train.loc[train[col] == value]
         rows.append((name, len(sub), 100 * (sub.target == "Desertor").mean()))
     baseline = 100 * (train.target == "Desertor").mean()
-    fig, ax = plt.subplots(figsize=(10.8, 4.65))
+    fig, ax = plt.subplots(figsize=(11.6, 5.6))
     fig.patch.set_facecolor("white")
-    fig.text(0.06, 0.94, "Las asociaciones administrativas son grandes", fontsize=16,
+    fig.text(0.04, 0.95, "Deserción según situación administrativa", fontsize=17,
              weight="bold", color=DARK)
-    fig.text(0.06, 0.875, "Porcentaje Desertor dentro de cada grupo · train, n = 40.000",
-             fontsize=10.5, color=MID)
-    y = np.arange(len(rows))
-    ax.barh(y, [r[2] for r in rows], height=0.58,
-            color=[RED if r[2] > baseline else MID for r in rows], zorder=2)
-    ax.axvline(baseline, color=DARK, linewidth=1, linestyle=(0, (3, 3)), zorder=3)
+    fig.text(0.04, 0.895, "Cada barra representa al 100 % de su grupo · Entrenamiento: 40.000 registros",
+             fontsize=10.5, color=DARK)
+    y = np.array([0, 1, 2.5, 3.5, 5, 6])
+    rates = np.array([r[2] for r in rows])
+    ax.barh(y, rates, height=0.62, color=RED, label="Desertor", zorder=2)
+    ax.barh(y, 100 - rates, left=rates, height=0.62, color="#D9D9D9",
+            label="En Curso o Graduado", zorder=2)
     ax.set_yticks(y, [f"{name}  (n={n:,})".replace(",", ".") for name, n, _ in rows])
     ax.invert_yaxis()
-    style(ax, 110, [0, 25, 50, 75, 100])
+    style(ax, 100, [0, 25, 50, 75, 100])
+    ax.set_xlabel("Porcentaje dentro de cada grupo", fontsize=10, color=DARK, labelpad=10)
+    ax.text(1.025, 1.05, "Desertor", transform=ax.transAxes, fontsize=10,
+            color=DARK, ha="left", weight="bold")
     for yi, (_, _, value) in zip(y, rows):
-        ax.text(value + 1, yi, f"{value:.1f}%".replace(".", ","),
-                va="center", fontsize=10.5, color=DARK, zorder=4,
-                bbox={"facecolor": "white", "edgecolor": "none", "pad": 0.6})
-    fig.text(0.06, 0.105, f"Línea: tasa de train completo, {baseline:.1f}%. Fecha de registro de estas variables: no acreditada.".replace("33.1", "33,1"),
+        ax.text(102.5, yi, f"{value:.1f} %".replace(".", ","),
+                va="center", fontsize=11, color=DARK, clip_on=False)
+    handles, labels = ax.get_legend_handles_labels()
+    fig.legend(handles, labels, loc="upper left", bbox_to_anchor=(0.035, 0.87),
+               ncol=2, frameon=False, fontsize=10, labelcolor=DARK)
+    fig.text(0.04, 0.075, f"En todo entrenamiento, el {baseline:.1f} % tiene la etiqueta Desertor. n = cantidad de registros del grupo.".replace("33.1", "33,1"),
+             fontsize=9.5, color=DARK)
+    fig.text(0.04, 0.025, "No se conoce cuándo se registraron o actualizaron estas variables. Las asociaciones no demuestran causalidad.",
              fontsize=9, color=MID)
-    fig.subplots_adjust(left=0.32, right=0.97, top=0.74, bottom=0.19)
+    fig.subplots_adjust(left=0.325, right=0.875, top=0.72, bottom=0.23)
     fig.savefig(OUT / "07_eda_administrativas.svg", facecolor="white")
     plt.close(fig)
 
