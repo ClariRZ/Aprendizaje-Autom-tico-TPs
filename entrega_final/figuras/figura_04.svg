@@ -409,7 +409,7 @@ L 696.444125 237.902667
     <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bb343c" x="596.102595" y="151.443121" transform="rotate(-0 596.102595 151.443121)">0.774</text>
    </g>
    <g id="text_24">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #474747" x="408.507561" y="60.745333" transform="rotate(-0 408.507561 60.745333)">Bosque · profundidad</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #474747" x="408.507561" y="60.745333" transform="rotate(-0 408.507561 60.745333)">Random Forest · profundidad</text>
    </g>
   </g>
   <g id="axes_3">

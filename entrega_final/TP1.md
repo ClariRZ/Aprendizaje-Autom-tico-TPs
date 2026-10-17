@@ -94,7 +94,7 @@ No se analizaron semestres aislados. Se conservaron las mismas filas y particion
 
 **Complejidad y sensibilidad.** Se comparó entrenamiento con validación al variar un hiperparámetro por vez. Las curvas de RF y AdaBoost usaron 12.000 filas y la de K-NN, 6.000, por costo computacional. Además se compararon tres y cinco folds con modelos fijos, una segunda grilla del Árbol y una referencia Dummy que predice siempre la clase más frecuente. Las ampliaciones de K-NN y AdaBoost se hicieron después de observar test, sin cambiar los modelos finales.
 
-**Importancia de variables.** Se midió cuánto bajaba el F1 macro del bosque al permutar cada predictor original, antes de One-Hot, con cinco repeticiones por columna en cada uno de tres folds de validación. También se evaluó el efecto de excluir del test perfiles idénticos a los de entrenamiento.
+**Importancia de variables.** Se midió cuánto bajaba el F1 macro del Random Forest al permutar cada predictor original, antes de One-Hot, con cinco repeticiones por columna en cada uno de tres folds de validación. También se evaluó el efecto de excluir del test perfiles idénticos a los de entrenamiento.
 
 ## 3. Resultados
 
@@ -139,7 +139,7 @@ En binario (Figura 3), la AUC de Logística cambió poco entre C=0,01 y 10: apro
 
 **Figura 3.** AUC de entrenamiento (gris) y validación (rojo), media de tres folds sobre las 40.000 filas del entrenamiento binario. Las escalas verticales difieren por panel.
 
-En multiclase (Figura 4), el RF reducido pasó de **0,7294 a 0,7741** de F1 macro entre profundidades 4 y 12; sin límite obtuvo 0,7738. Esta curva corresponde a 80 árboles y hoja mínima 10, no al bosque final. En K-NN, k=3 mostró una brecha amplia: 0,823 en entrenamiento frente a 0,700 en validación. La curva tuvo su máximo entre los valores ensayados en k=11; la grilla final eligió k=25 con otra muestra y otros candidatos, de modo que no son comparaciones equivalentes. AdaBoost mejoró de **0,7656 a 0,7771** entre 100 y 600 árboles, sin caída dentro del rango probado.
+En multiclase (Figura 4), el RF reducido pasó de **0,7294 a 0,7741** de F1 macro entre profundidades 4 y 12; sin límite obtuvo 0,7738. Esta curva corresponde a 80 árboles y hoja mínima 10, no al Random Forest final. En K-NN, k=3 mostró una brecha amplia: 0,823 en entrenamiento frente a 0,700 en validación. La curva tuvo su máximo entre los valores ensayados en k=11; la grilla final eligió k=25 con otra muestra y otros candidatos, de modo que no son comparaciones equivalentes. AdaBoost mejoró de **0,7656 a 0,7771** entre 100 y 600 árboles, sin caída dentro del rango probado.
 
 ![Figura 4. Curvas de complejidad multiclase](figuras/figura_04.svg)
 
@@ -187,7 +187,7 @@ Random Forest obtuvo el mayor F1 macro, **0,7808**, seguido por AdaBoost, **0,77
 
 En Curso tuvo el menor F1 en los cuatro modelos: 0,5542 en K-NN, 0,5899 en Árbol, 0,6096 en RF y 0,6006 en AdaBoost. En RF, su sensibilidad fue 0,5981, frente a 0,8076 para Desertor y 0,9192 para Graduado.
 
-La matriz de RF (Figura 6) respalda H3: de **1.953 casos En Curso**, 569 (29,1 %) se clasificaron como Graduado y 216 (11,1 %) como Desertor. El primer error desaparece al agrupar En Curso y Graduado como No desertor. Esta observación se refiere a las etiquetas; no atribuye al bosque el desempeño de un modelo binario entrenado por separado.
+La matriz de RF (Figura 6) respalda H3: de **1.953 casos En Curso**, 569 (29,1 %) se clasificaron como Graduado y 216 (11,1 %) como Desertor. El primer error desaparece al agrupar En Curso y Graduado como No desertor. Esta observación se refiere a las etiquetas; no atribuye al Random Forest el desempeño de un modelo binario entrenado por separado.
 
 ![Figura 6. Matriz de confusión de Random Forest](figuras/figura_06.svg)
 
