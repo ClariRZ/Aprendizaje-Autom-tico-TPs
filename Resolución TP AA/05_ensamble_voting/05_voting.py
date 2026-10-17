@@ -52,20 +52,23 @@ lr = Pipeline([
     )),
 ])
 
-svm = Pipeline([
-    ("pre", pre(Xtr, True)),
-    ("modelo", CalibratedClassifierCV(
-        estimator=SVC(
+# La calibración divide el entrenamiento en folds internos. El estimador
+# completo (preprocesamiento + SVM) debe reajustarse dentro de cada fold:
+# el escalador y los imputadores tampoco deben ver la parte de calibración.
+svm = CalibratedClassifierCV(
+    estimator=Pipeline([
+        ("pre", pre(Xtr, True)),
+        ("modelo", SVC(
             C=0.1,
             gamma=0.01,
             cache_size=500,
             random_state=SEMILLA,
-        ),
-        method="sigmoid",
-        cv=3,
-        ensemble=False,
-    )),
-])
+        )),
+    ]),
+    method="sigmoid",
+    cv=3,
+    ensemble=False,
+)
 
 tree = Pipeline([
     ("pre", pre(Xtr, False)),

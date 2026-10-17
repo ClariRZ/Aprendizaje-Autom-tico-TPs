@@ -4,7 +4,7 @@
 
 Se evaluó si un ensamble Soft Voting de Regresión Logística, SVM RBF y Árbol de Decisión aportaba una mejora respecto de los modelos individuales del bloque 03.
 
-Los tres modelos usan las configuraciones previamente seleccionadas y el ensamble utiliza pesos iguales. Para el SVM se emplea calibración sigmoide mediante `CalibratedClassifierCV`, de modo que pueda aportar probabilidades al Soft Voting sin usar la opción deprecada `SVC(probability=True)`.
+Los tres modelos usan las configuraciones previamente seleccionadas y el ensamble utiliza pesos iguales. Para el SVM se emplea calibración sigmoide mediante `CalibratedClassifierCV`, cuyo estimador contiene el pipeline completo de preprocesamiento y SVM. Así, los imputadores, la codificación y el escalado se reajustan dentro de cada fold interno de calibración, sin usar sus casos reservados. Se repitió el Voting tras corregir la ubicación del preprocesamiento; las métricas y los conteos siguientes no cambiaron. El test había sido observado previamente y sigue siendo exploratorio.
 
 ## 2. Resultado definitivo
 
@@ -53,7 +53,7 @@ Por eso no corresponde afirmar que Voting sea “mejor” en términos absolutos
 
 ## 5. Costo computacional
 
-La corrida definitiva tardó aproximadamente **1,14 minutos**.
+La nueva corrida de verificación tardó aproximadamente **1,36 minutos** en el entorno utilizado; el tiempo no es comparable directamente con otras máquinas o condiciones de carga. Sus resultados se conservan en las [evidencias de la entrega](../../entrega_final/verificaciones/README.md).
 
 El costo es mayor que el de Logística y Árbol porque el ensamble entrena tres modelos y además calibra el SVM.
 

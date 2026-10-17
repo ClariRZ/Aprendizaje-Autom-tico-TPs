@@ -1,0 +1,57 @@
+{
+  "commit_base_auditado": "eeaa68f46c6b92c1502aae431f7723364694f83c",
+  "dataset_sha256": "a0a75e40e32ae336c24fad49fb271da45429593e1fccc16f08c397a1f3bbe09d",
+  "versiones": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0"
+  },
+  "base": {
+    "filas": 50000,
+    "predictores": 27,
+    "numericas": 11,
+    "categoricas": 16,
+    "columnas_transformadas": 77,
+    "faltantes_explicitos": 0,
+    "celdas_reemplazadas_por_imputacion": 0
+  },
+  "particiones": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "binaria": "estratificada por etiqueta binaria",
+    "multiclase_y_sensibilidad_folds": "estratificada por tres clases"
+  },
+  "voting_corregido": {
+    "calibrador": "sigmoid",
+    "cv_interna": 3,
+    "ensemble": false,
+    "estimador_calibrado": "Pipeline(preprocesamiento, SVC)",
+    "pesos": "iguales",
+    "hiperparametros_y_split": "sin cambios",
+    "metricas_iguales_a_reproduccion_anterior": true
+  },
+  "grillas_recalculadas": {
+    "Logistica": {
+      "parametros": {
+        "modelo__C": 0.1
+      },
+      "media_cv": 0.9506943467867108
+    },
+    "Arbol_binario": {
+      "parametros": {
+        "modelo__max_depth": 8,
+        "modelo__min_samples_leaf": 50
+      },
+      "media_cv": 0.9444602646725321
+    },
+    "Arbol_multiclase": {
+      "parametros": {
+        "modelo__max_depth": 12,
+        "modelo__min_samples_leaf": 50
+      },
+      "media_cv": 0.7697556104043253
+    }
+  },
+  "alcance": "Reproducción de las métricas finales, tres grillas y sensibilidad de folds con modelos fijos; no se repitieron todas las otras grillas ni todas las permutaciones. Test exploratorio, previamente observado."
+}

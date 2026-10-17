@@ -28,11 +28,11 @@ No se reabre GridSearch ni se cambia el Árbol a partir de las curvas del bloque
 
 Soft Voting requiere `predict_proba`.
 
-La versión de scikit-learn usada muestra que `SVC(probability=True)` está deprecado. Se reemplaza por `CalibratedClassifierCV` con calibración sigmoide.
+Se usa `CalibratedClassifierCV` con calibración sigmoide y tres folds internos (`ensemble=False`). Su estimador es el pipeline completo de preprocesamiento y SVM, de modo que los imputadores, el codificador y el escalador se ajustan sólo con la parte de entrenamiento de cada fold interno.
 
 **Por qué:** convierte el score del SVM en probabilidades sin cambiar C ni gamma.
 
-**Importante:** al usar calibración explícita, una nueva corrida puede producir valores ligeramente distintos del resultado previo con `probability=True`. La interpretación debe basarse en la corrida del script vigente.
+**Importante:** se corrigió una versión previa que ajustaba el preprocesamiento antes de las divisiones internas de calibración. Se repitió el Voting conservando los mismos hiperparámetros, pesos y split, sin usar el test para elegirlos. La interpretación y las métricas deben basarse en esa nueva corrida. El test sigue siendo exploratorio porque ya había sido observado.
 
 ---
 

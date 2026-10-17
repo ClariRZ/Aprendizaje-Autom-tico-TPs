@@ -6,7 +6,7 @@
 
 ## Decisiones y explicación
 
-`05_voting.py` usa la misma división binaria 80/20 del paso 03 y conserva sus parámetros elegidos: Logística C=0,1; SVM C=0,1 y gamma=0,01; Árbol profundidad 8 y hoja 50. Soft Voting promedia probabilidades con pesos iguales. El SVM individual no entrega probabilidades; dentro de su pipeline `CalibratedClassifierCV` aprende una sigmoide con tres folds internos de entrenamiento (`ensemble=False`). El promedio asigna Desertor cuando su probabilidad alcanza 0,5. Ni los pesos ni la calibración se ajustaron mirando test.
+`05_voting.py` usa la misma división binaria 80/20 del paso 03 y conserva sus parámetros elegidos: Logística C=0,1; SVM C=0,1 y gamma=0,01; Árbol profundidad 8 y hoja 50. Soft Voting promedia probabilidades con pesos iguales. El SVM individual no entrega probabilidades; `CalibratedClassifierCV` envuelve el pipeline completo de preprocesamiento y SVM y aprende una sigmoide con tres folds internos de entrenamiento (`ensemble=False`). Así también imputadores, codificación y escalado se reajustan dentro de cada fold de calibración. El promedio asigna la clase de mayor probabilidad. Ni los pesos ni la calibración se ajustaron mirando test; el test había sido observado previamente y sus resultados se consideran exploratorios.
 
 Probamos una mejora posible de ROC-AUC, no asumimos que deba mejorar también el F1: ordenar mejor todos los casos puede coexistir con una sensibilidad menor a un umbral fijo. Los tres modelos observan las mismas variables, por lo que algunos errores serán compartidos y el promedio no podrá borrarlos.
 

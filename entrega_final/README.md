@@ -9,6 +9,10 @@ Para corregir la entrega, editá `TP1.md` y los SVG correspondientes.
 Antes de entregar, completá `Integrantes: [completar]` con los nombres del
 grupo y revisá que tablas, cifras y figuras coincidan con los resultados.
 
+Las [evidencias de verificación](verificaciones/README.md) registran la
+reproducción de las métricas y la nueva corrida del Voting con el
+preprocesamiento dentro de sus folds internos de calibración.
+
 El [recorrido en diez pasos](../README.md#resolución-paso-a-paso) reúne los
 scripts y las decisiones que fundamentan el informe. Los experimentos
 adicionales y la comparación temporal están identificados en `AA privada/`.
