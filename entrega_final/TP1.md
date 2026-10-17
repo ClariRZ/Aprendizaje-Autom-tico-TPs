@@ -161,10 +161,16 @@ Al ampliar los extremos de la grilla (Tabla 3), K-NN no mejoró más allá de 25
 
 **Tabla 3.** Ampliación de grillas: F1 macro medio en validación de tres folds, con 40.000 filas de entrenamiento.
 
-| Modelo y configuración fija | Valor probado → F1 macro |
-|---|---|
-| K-NN, peso uniforme | 25 → 0,7487 · 35 → 0,7475 · 51 → 0,7453 |
-| AdaBoost, profundidad 2; tasa 0,1 | 200 → 0,7623 · 400 → 0,7715 · 600 → 0,7747 |
+| Modelo | Configuración fija | Hiperparámetro | Valor | F1 macro |
+|---|---|---|---:|---:|
+| K-NN | pesos uniformes | *k* (n.º de vecinos) | 25 | **0,7487** |
+| | | | 35 | 0,7475 |
+| | | | 51 | 0,7453 |
+| AdaBoost | profundidad 2; tasa 0,1 | n.º de árboles | 200 | 0,7623 |
+| | | | 400 | 0,7715 |
+| | | | 600 | **0,7747** |
+
+La negrita indica el mayor F1 macro entre los valores probados para cada modelo.
 
 ### 3.5. Clasificación multiclase
 
