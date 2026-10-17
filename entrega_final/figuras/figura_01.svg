@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="titulo descripcion">
-<title id="titulo">Bloques de información para predecir deserción</title>
-<desc id="descripcion">Doce columnas candidatas al ingreso, cuatro del primer semestre y cuatro del segundo; otras siete no tienen fecha acreditada. Las 27 pueden utilizarse en el caso completo.</desc>
+<title id="titulo">Comparación principal y análisis acumulativo</title>
+<desc id="descripcion">La comparación principal usa los 27 predictores. El análisis adicional parte de 12 variables de inscripción y antecedentes, agrega cuatro del primer semestre, cuatro del segundo y siete administrativas y familiares: 12, 16, 20 y 27. El último grupo no es una fecha posterior.</desc>
 <style>
 text{font-family:Arial,Helvetica,sans-serif;fill:#252525}
 .title{font-size:27px;font-weight:bold}
@@ -10,28 +10,30 @@ text{font-family:Arial,Helvetica,sans-serif;fill:#252525}
 .small{font-size:14px;fill:#555}
 </style>
 <rect width="1200" height="430" fill="white"/>
-<text class="title" x="48" y="48">Qué información entra al modelo completo</text>
-<text class="subtitle" x="48" y="78">El nombre de una variable no alcanza para certificar cuándo estuvo disponible</text>
+<text class="title" x="48" y="48">Comparación principal: los 27 predictores juntos</text>
+<text class="subtitle" x="48" y="78">Análisis adicional: agregar grupos de variables sin quitar los anteriores</text>
 <path d="M180 184 H1030" fill="none" stroke="#a6a6a6" stroke-width="4"/>
 <path d="M1030 184 l-18 -10 v20 z" fill="#a6a6a6"/>
 <circle cx="180" cy="184" r="21" fill="#555"/>
 <circle cx="470" cy="184" r="21" fill="#b64545"/>
 <circle cx="750" cy="184" r="21" fill="#b64545"/>
 <circle cx="1030" cy="184" r="21" fill="#555"/>
-<text class="stage" x="180" y="142" text-anchor="middle">Ingreso candidato</text>
-<text class="body" x="180" y="229" text-anchor="middle">12 columnas</text>
-<text class="small" x="180" y="255" text-anchor="middle">fecha real por confirmar</text>
+<text class="stage" x="180" y="120" text-anchor="middle">Inscripción</text>
+<text class="stage" x="180" y="145" text-anchor="middle">y antecedentes</text>
+<text class="body" x="180" y="229" text-anchor="middle">12 variables</text>
+<text class="small" x="180" y="255" text-anchor="middle">punto de partida</text>
 <text class="stage" x="470" y="142" text-anchor="middle">1.er semestre</text>
-<text class="body" x="470" y="229" text-anchor="middle">+ 4 columnas</text>
-<text class="small" x="470" y="255" text-anchor="middle">actividad y notas</text>
+<text class="body" x="470" y="229" text-anchor="middle">+ 4 = 16 variables</text>
+<text class="small" x="470" y="255" text-anchor="middle">incluye las 12 anteriores</text>
 <text class="stage" x="750" y="142" text-anchor="middle">2.º semestre</text>
-<text class="body" x="750" y="229" text-anchor="middle">+ 4 columnas</text>
-<text class="small" x="750" y="255" text-anchor="middle">actividad y notas</text>
-<text class="stage" x="1030" y="142" text-anchor="middle">Target</text>
-<text class="body" x="1030" y="229" text-anchor="middle">3 clases</text>
-<text class="small" x="1030" y="255" text-anchor="middle">estado académico</text>
+<text class="body" x="750" y="229" text-anchor="middle">+ 4 = 20 variables</text>
+<text class="small" x="750" y="255" text-anchor="middle">incluye ambos semestres</text>
+<text class="stage" x="1030" y="120" text-anchor="middle">Administrativas</text>
+<text class="stage" x="1030" y="145" text-anchor="middle">y familiares</text>
+<text class="body" x="1030" y="229" text-anchor="middle">+ 7 = 27 variables</text>
+<text class="small" x="1030" y="255" text-anchor="middle">conjunto completo</text>
 <rect x="48" y="305" width="1104" height="84" rx="10" fill="#f3f3f3"/>
 <rect x="48" y="305" width="7" height="84" fill="#b64545"/>
-<text class="body" x="72" y="335">+ 7 columnas sin fecha acreditada: deuda, matrícula, beca y cuatro parentales.</text>
-<text class="small" x="72" y="365">12 + 4 + 4 + 7 = 27 para el caso completo; no supone predicción temprana al ingreso.</text>
+<text class="body" x="72" y="335">El último grupo agrega información; no representa una fecha posterior al segundo semestre.</text>
+<text class="small" x="72" y="365">No se conoce cuándo se actualizaron deuda, matrícula, beca y las variables familiares.</text>
 </svg>

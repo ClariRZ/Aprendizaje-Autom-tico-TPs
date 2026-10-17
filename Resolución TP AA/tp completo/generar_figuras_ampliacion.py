@@ -182,14 +182,14 @@ def stages(metrics):
         for x, y in enumerate(yy):
             ax.annotate(f"{y:.3f}", (x, y), xytext=(0, 10), textcoords="offset points",
                         ha="center", fontsize=9, color=RED if x == 3 else GRAY)
-        ax.set_xticks(range(4), ["Ingreso\n12", "+ semestre 1\n16", "+ semestre 2\n20", "+ sin fecha\n27"])
+        ax.set_xticks(range(4), ["Ingreso\n12", "+ semestre 1\n16", "+ semestre 2\n20", "+ otras 7\n27"])
         ax.set_xlim(-.23, 3.23)
         ax.set_ylim(0, 1.04)
         ax.set_title(title, loc="left", fontweight="bold")
         tidy(ax)
-    fig.suptitle("Las señales aumentan al sumar información académica",
+    fig.suptitle("Desempeño al acumular grupos de variables",
                  x=.04, y=.99, ha="left", fontsize=15, fontweight="bold")
-    fig.text(.04, .01, "Mismos casos y folds por etapa, con selección de parámetros dentro de train. Rojo: 7 columnas sin fecha acreditada.", fontsize=9)
+    fig.text(.04, .01, "Mismos casos y folds por etapa; selección de parámetros en train. Rojo: siete variables administrativas y familiares.", fontsize=9)
     fig.subplots_adjust(left=.075, right=.96, bottom=.26, top=.78, wspace=.26)
     fig.savefig(OUT / "10_senales_por_etapa.svg", bbox_inches="tight")
     plt.close(fig)

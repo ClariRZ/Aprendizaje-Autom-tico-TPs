@@ -1,5 +1,8 @@
 # Evidencias de verificación y corrección
 
+La [revisión de concordancia de la versión abreviada](concordancia_redaccion.md)
+detalla el acuerdo entre texto, tablas, figuras y resultados disponibles.
+
 Se reconstruyó la base desde las diez partes CSV del repositorio y se
 comparó su SHA-256 con el registrado en los protocolos existentes. Con
 scikit-learn 1.8.0 se reentrenaron las configuraciones finales de los ocho
