@@ -5,7 +5,13 @@
 
 ## Resumen
 
-Comparamos modelos para predecir dos resultados: Desertor frente a No desertor, y los tres estados Desertor, En Curso y Graduado. Analizamos una base sintética transformada de 50.000 registros y 27 predictores. La comparación principal utilizó todas las variables, incluidas las de ambos semestres. La selección de hiperparámetros se hizo por validación cruzada en entrenamiento; como el test había sido observado previamente, su evaluación es exploratoria. En binario, la Regresión Logística obtuvo ROC-AUC 0,9506 y el Soft Voting, 0,9514, sin mejorar F1. En multiclase, Random Forest alcanzó el mayor F1 macro, 0,7808. En Curso fue la clase más difícil y se confundió principalmente con Graduado, un error que la tarea binaria no distingue. En un análisis adicional, incorporamos información de forma acumulativa: inscripción y antecedentes, primer semestre, segundo semestre y variables administrativas y familiares. La mayor mejora apareció al sumar el primer semestre. Los resultados muestran capacidad predictiva en esta base, pero no demuestran que los modelos completos puedan anticipar el abandono desde la inscripción.
+El objetivo de este trabajo fue comparar modelos de clasificación para predecir la deserción estudiantil, evaluar su desempeño y capacidad de generalización. Se analizó una base sintética transformada de 50.000 registros y 27 predictores mediante clasificación binaria —Desertores frente a No desertores— y multiclase —Desertores, En Curso y Graduados—.
+
+Los hiperparámetros se seleccionaron mediante validación cruzada en entrenamiento. La comparación principal utilizó todos los predictores, incluidos los de ambos semestres. Como análisis adicional, se evaluó el aporte de incorporar sucesivamente información de inscripción y antecedentes, primer semestre, segundo semestre y variables administrativas y familiares.
+
+En los modelos binarios, Soft Voting obtuvo la mayor ROC-AUC (0,9514), apenas por encima de regresión logística (0,9506), sin mejorar su F1. En los modelos multiclase, Random Forest alcanzó el mayor F1 macro (0,7808), mientras que En Curso fue la clase más difícil y se confundió principalmente con Graduado. La mayor mejora predictiva apareció al incorporar el primer semestre.
+
+Los resultados muestran capacidad predictiva exploratoria en esta base. La exploración previa del test limita la evaluación, y el uso de información de ambos semestres no demuestra anticipación del abandono desde la inscripción.
 
 ## 1. Introducción
 
