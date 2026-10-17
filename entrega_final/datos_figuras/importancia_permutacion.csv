@@ -1,0 +1,14 @@
+variable,grupo,caida_f1_macro,sd
+Aprobadas S2,Académicas,0.1004,0.0087
+Matrícula al día,Deuda / matrícula / beca,0.0360,0.0021
+Nota S2,Académicas,0.0226,0.0025
+Evaluaciones S2,Académicas,0.0121,0.0020
+Aprobadas S1,Académicas,0.0115,0.0026
+Beca,Deuda / matrícula / beca,0.0095,0.0020
+Evaluaciones S1,Académicas,0.0042,0.0015
+Carrera,Otras 16 variables,0.0024,0.0015
+Sexo,Otras 16 variables,0.0021,0.0017
+Nota S1,Académicas,0.0018,0.0017
+Edad,Otras 16 variables,0.0016,0.0011
+Deuda,Deuda / matrícula / beca,0.0012,0.0006
+Puntaje de ingreso,Otras 16 variables,0.0006,0.0012
