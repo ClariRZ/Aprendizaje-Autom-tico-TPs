@@ -61,7 +61,7 @@ Se compararon las familias pedidas en la consigna, con propiedades diferentes:
 - **Random Forest (bagging):** combina árboles entrenados con muestras bootstrap y subconjuntos aleatorios de variables por división. El promedio busca reducir la varianza [5], sin garantizar ausencia de sobreajuste. Se fijó `max_features="sqrt"`.
 - **AdaBoost (boosting):** combina árboles pequeños en secuencia, dando más peso a los casos mal clasificados. Se ajustaron cantidad de árboles, profundidad y tasa de aprendizaje.
 
-Los hiperparámetros de la Tabla 1 se eligieron mediante **validación cruzada estratificada de tres folds (particiones)** dentro de entrenamiento. Cada configuración se ajustó con aproximadamente 26.667 casos y se validó con 13.333. Se seleccionó por ROC-AUC en binario y por F1 macro en multiclase; después se reentrenó con las 40.000 filas y se evaluó en test.
+Para cada modelo se definió una grilla de hiperparámetros: las opciones iniciales figuran en «Valores probados» de la Tabla 1. Se evaluaron todas sus combinaciones mediante **validación cruzada estratificada de tres folds (particiones)** dentro de entrenamiento; la configuración seleccionada figura en «Elegido». Cada configuración se ajustó con aproximadamente 26.667 casos y se validó con 13.333. Se seleccionó por ROC-AUC en binario y por F1 macro en multiclase; después se reentrenó con las 40.000 filas y se evaluó en test.
 
 **Tabla 1.** Hiperparámetros probados y seleccionados por validación cruzada.
 
