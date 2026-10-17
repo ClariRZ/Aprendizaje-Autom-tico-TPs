@@ -15,11 +15,11 @@ Los resultados muestran capacidad predictiva exploratoria en esta base. La explo
 
 ## 1. Introducción
 
-La deserción universitaria se relaciona con condiciones personales, administrativas y académicas. Estudiamos si esas variables permiten predecir el estado académico de estudiantes mediante distintos clasificadores. La base utilizada es una versión sintética y transformada de datos cuyo origen es el Instituto Politécnico de Portalegre, Portugal [1,2].
+La predicción de la deserción universitaria mediante aprendizaje automático permite estudiar qué información de los registros estudiantiles resulta útil para identificar estudiantes en riesgo [2,8]. Delen [8], utilizando ocho años de datos institucionales, encontró que las variables académicas y financieras estaban entre los predictores más importantes. En este trabajo comparamos modelos de clasificación binaria y multiclase utilizando una versión sintética y transformada de datos originados en el Instituto Politécnico de Portalegre, Portugal [2,4].
 
-Trabajos sobre esta fuente muestran que la predicción mejora al incorporar el rendimiento del primer año, especialmente del primer semestre [2,3]. Sin embargo, una nota o una cantidad de materias aprobadas puede reflejar dificultades que ya comenzaron. Por eso distinguimos entre predecir usando información del año completo y anticipar el abandono con datos disponibles al inscribirse. El objetivo es comparar modelos y estudiar qué información contribuye a sus predicciones, sin identificar causas de deserción.
+En esa fuente, Realinho et al. [2] identificaron mediante importancia por permutación cinco predictores relevantes en los cuatro algoritmos examinados: materias aprobadas de ambos semestres, nota del segundo semestre, carrera y matrícula al día. Por su parte, Martins et al. [3] compararon predicciones en distintas etapas del primer año: el mayor F1 global reportado pasó de 0,650 con información de inscripción a 0,745 al incluir el primer semestre. Estos antecedentes motivan estudiar el aporte académico y administrativo en la versión utilizada en el TP; sus puntajes no se comparan directamente con los nuestros, porque cambian los datos y los procedimientos.
 
-A partir de la exploración en entrenamiento planteamos tres hipótesis, que contrastamos mediante los modelos, el análisis por bloques y los errores por clase:
+El objetivo es comparar el desempeño y la capacidad de generalización de modelos para predecir la deserción, y examinar qué información sostiene sus predicciones. Además de la comparación con los 27 predictores, analizamos el aporte de agregar grupos de variables de forma acumulativa. El uso de información del primer año no implica, por sí mismo, anticipación desde la inscripción ni permite identificar causas del abandono. A partir de los antecedentes y de la exploración en entrenamiento planteamos tres hipótesis exploratorias, que examinamos mediante los modelos, el análisis por bloques y los errores por clase:
 
 - **H1.** La actividad y el rendimiento académico del primer año aportan la mayor información predictiva.
 - **H2.** Las variables administrativas y de ingreso aportan información, pero menos que las académicas.
@@ -255,3 +255,4 @@ Los modelos mostraron capacidad predictiva exploratoria en esta base, con un apo
 5. Hastie T, Tibshirani R, Friedman J. *The Elements of Statistical Learning*. 2.ª ed. Springer; 2009. Cap. 15.
 6. Hand DJ, Till RJ. *A Simple Generalisation of the Area Under the ROC Curve for Multiple Class Classification Problems*. Machine Learning. 2001;45:171–186.
 7. *generar_dataset_tp1.py*. Script de preparación disponible para este TP, sin autoría ni fecha consignadas. [Código fuente](../00_base_de_datos/generar_dataset_tp1.py).
+8. Delen D. *Predicting Student Attrition with Data Mining Methods*. Journal of College Student Retention: Research, Theory & Practice. 2011;13(1):17–35. doi:10.2190/CS.13.1.b.
