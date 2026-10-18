@@ -13,6 +13,8 @@ En los modelos binarios, Soft Voting obtuvo la mayor ROC-AUC (0,9514), apenas po
 
 Los resultados muestran capacidad predictiva exploratoria en esta base. La exploración previa del test limita la evaluación, y el uso de información de ambos semestres no demuestra anticipación del abandono desde la inscripción.
 
+**Palabras clave:** deserción estudiantil; aprendizaje automático; clasificación multiclase; validación cruzada; importancia por permutación
+
 ## 1. Introducción
 
 La predicción de la deserción estudiantil mediante aprendizaje automático permite evaluar la utilidad de los registros institucionales para reconocer estudiantes en riesgo [1]. Este trabajo examina esa capacidad predictiva mediante dos tareas: distinguir Desertor de No desertor y diferenciar los estados Desertor, En Curso y Graduado. Se compararon modelos de clasificación y se analizó el aporte de la información académica, administrativa y de ingreso.
@@ -31,16 +33,18 @@ Estos antecedentes motivaron el análisis de una versión sintética y transform
 
 Se utilizó el archivo `dataset_TP1_2026.csv`, con 50.000 registros, 27 predictores y una variable respuesta. La base procede de Kaggle Playground Series S4E6 [4], un conjunto sintético derivado de *Predict Students’ Dropout and Academic Success* [2]. El script de preparación disponible [5] documenta traducciones, agrupamientos, reescalados y muestreo por respuesta y carrera. El presente análisis utilizó el archivo ya preparado, cuyos nombres y categorías están en castellano.
 
-Los 11 predictores numéricos y 16 categóricos se organizaron en cuatro grupos (Figura 1):
+Los 11 predictores numéricos y 16 categóricos se organizaron en cuatro grupos (Tabla 1). Se desconoce la fecha de registro o actualización del grupo administrativo y familiar. Los rótulos de ingresos y demanda cognitiva son recodificaciones de ocupación.
 
-- **Inscripción y antecedentes:** 12 variables, entre ellas edad al inscribirse, carrera y estudios previos.
-- **Primer semestre (S1):** materias inscriptas, evaluaciones, materias aprobadas y nota promedio.
-- **Segundo semestre (S2):** las mismas cuatro medidas correspondientes a ese período.
-- **Administrativas y familiares:** deuda, matrícula al día, beca y cuatro variables derivadas de ocupaciones parentales. Se desconoce la fecha de registro o actualización de este grupo. Los rótulos de ingresos y demanda cognitiva son recodificaciones de ocupación.
+**Tabla 1.** Grupos de predictores. La comparación principal incluyó las 27 variables; el análisis acumulativo (Sección 2.5) agregó los grupos en el orden de la tabla.
 
-![Figura 1. Grupos de variables y análisis acumulativo](figuras/figura_01.svg)
+| Grupo | Variables | Tipo | Acumulado |
+|-----------|----------------------------------|-----------|------:|
+| Inscripción y antecedentes | Estudios previos, nota de estudios previos, puntaje de ingreso, modo de acceso, carrera, turno, edad al inscribirse, sexo, estado civil, desplazamiento, estudiante internacional, necesidades educativas especiales | 9 categóricas, 3 numéricas | 12 |
+| Primer semestre (S1) | Materias inscriptas, evaluaciones, materias aprobadas, nota promedio | 4 numéricas | 16 |
+| Segundo semestre (S2) | Las mismas cuatro medidas del segundo semestre | 4 numéricas | 20 |
+| Administrativas y familiares | Deuda, matrícula al día, beca, ingresos y demanda cognitiva de la ocupación de cada progenitor | 7 categóricas | 27 |
 
-**Figura 1. Grupos de predictores.** La comparación principal incluyó las 27 variables. El análisis acumulativo agregó grupos a partir de las 12 variables de inscripción y antecedentes; el grupo administrativo y familiar no representa una etapa posterior a S2.
+El grupo administrativo y familiar no representa una etapa posterior a S2: se incorporó al final porque su fecha de disponibilidad es desconocida.
 
 El análisis exploratorio se realizó en el entrenamiento de la partición multiclase: 18.966 registros Graduado (47,42 %), 13.223 Desertor (33,06 %) y 7.811 En Curso (19,53 %). El desbalance se consideró en la evaluación mediante F1 macro y métricas por clase; no se aplicaron remuestreo ni pesos de clase al entrenamiento.
 
@@ -56,18 +60,18 @@ Cada tarea utilizó una partición estratificada por su propia respuesta, con 80
 
 El análisis se implementó en Python con scikit-learn. La comparación principal incluyó los 27 predictores. El preprocesamiento y el clasificador se integraron en un *pipeline*, ajustado dentro de cada partición de entrenamiento de la validación cruzada. Se incluyeron imputadores por mediana y moda, que no reemplazaron valores por ausencia de faltantes. La codificación *one-hot* de las variables categóricas, junto con las numéricas, produjo 77 columnas. Las numéricas se estandarizaron para regresión logística, SVM y K-NN. Se conservaron todos los predictores.
 
-En la tarea binaria se compararon regresión logística con penalización L2, máquinas de soporte vectorial con núcleo RBF (SVM) y árboles de decisión con criterio Gini. La regresión logística transforma una combinación lineal de predictores en una probabilidad mediante la función logística; L2 limita la magnitud de sus coeficientes. SVM RBF admite fronteras no lineales, mientras que el árbol representa interacciones mediante divisiones sucesivas. Su complejidad se controló mediante los hiperparámetros de la Tabla 1.
+En la tarea binaria se compararon regresión logística con penalización L2, máquinas de soporte vectorial con núcleo RBF (SVM) y árboles de decisión con criterio Gini. La regresión logística transforma una combinación lineal de predictores en una probabilidad mediante la función logística; L2 limita la magnitud de sus coeficientes. SVM RBF admite fronteras no lineales, mientras que el árbol representa interacciones mediante divisiones sucesivas. Su complejidad se controló mediante los hiperparámetros de la Tabla 2.
 
 En multiclase se evaluaron K-NN, árboles de decisión, Random Forest (RF) y AdaBoost. K-NN determina la clase a partir de los vecinos más próximos. RF combina árboles entrenados con muestras *bootstrap* y selección aleatoria de variables en cada división, una estrategia orientada a reducir la varianza [6]; se fijó `max_features="sqrt"`. AdaBoost combina árboles pequeños de forma secuencial, aumentando el peso de los casos mal clasificados. Estos modelos admiten directamente las tres clases.
 
 ### 2.4. Selección de hiperparámetros y evaluación
 
-Para cada modelo se definió una grilla de valores candidatos (Tabla 1). Todas sus combinaciones se evaluaron mediante validación cruzada estratificada de tres particiones (*folds*) dentro de entrenamiento. En cada iteración se utilizaron aproximadamente 26.667 registros para ajustar y 13.333 para validar. Se eligió la configuración con mayor ROC-AUC media en binario o mayor F1 macro medio en multiclase; luego se reajustó con los 40.000 registros y se evaluó en prueba.
+Para cada modelo se definió una grilla de valores candidatos (Tabla 2). Todas sus combinaciones se evaluaron mediante validación cruzada estratificada de tres particiones (*folds*) dentro de entrenamiento. En cada iteración se utilizaron aproximadamente 26.667 registros para ajustar y 13.333 para validar. Se eligió la configuración con mayor ROC-AUC media en binario o mayor F1 macro medio en multiclase; luego se reajustó con los 40.000 registros y se evaluó en prueba.
 
-**Tabla 1. Hiperparámetros evaluados y configuraciones seleccionadas mediante validación cruzada.**
+**Tabla 2.** Hiperparámetros evaluados y configuraciones seleccionadas mediante validación cruzada.
 
 | Tarea · modelo | Valores probados | Elegido |
-|---|---|---|
+|--------------------|----------------------------------------------|------------------|
 | Binaria · Logística | C: 0,01; 0,1; 1; 10 | C=0,1 |
 | Binaria · SVM | C: 0,1; 1; 10 · γ: scale; 0,01; 0,1 | C=0,1; γ=0,01 |
 | Binaria · Árbol | profundidad: 2; 4; 6; 8; 12; sin límite · hoja mín.: 1; 10; 50 | prof. 8; hoja 50 |
@@ -94,90 +98,97 @@ La importancia de variables se estimó mediante la caída del F1 macro de RF al 
 
 ### 3.1. Características de las clases
 
-La proporción de registros sin materias aprobadas fue mayor en Desertor: 58,1 % en S1 y 67,9 % en S2, frente a 4,2 % y 4,6 % en En Curso y aproximadamente 1,5 % en Graduado para ambos semestres (Figura 2a). Entre quienes aprobaron al menos una materia, las medianas para Desertor, En Curso y Graduado fueron, respectivamente, 4, 5 y 6 en S1, y 3, 4 y 6 en S2. La ausencia de aprobaciones no permite distinguir entre no rendir y rendir sin aprobar.
+La proporción de registros sin materias aprobadas fue mayor en Desertor: 58,1 % en S1 y 67,9 % en S2, frente a 4,2 % y 4,6 % en En Curso y aproximadamente 1,5 % en Graduado para ambos semestres (Figura 1a). Entre quienes aprobaron al menos una materia, las medianas para Desertor, En Curso y Graduado fueron, respectivamente, 4, 5 y 6 en S1, y 3, 4 y 6 en S2. La ausencia de aprobaciones no permite distinguir entre no rendir y rendir sin aprobar.
 
-La proporción de Desertor fue 93,79 % entre quienes no tenían la matrícula al día (n=4.332), 76,05 % entre quienes tenían deuda (n=2.877) y 7,21 % entre quienes tenían beca (n=9.930), frente al 33,06 % del entrenamiento completo (Figura 2b). La mediana de edad fue 22 años en Desertor y 19 en las otras clases.
+La proporción de Desertor fue 93,79 % entre quienes no tenían la matrícula al día (n=4.332), 76,05 % entre quienes tenían deuda (n=2.877) y 7,21 % entre quienes tenían beca (n=9.930), frente al 33,06 % del entrenamiento completo (Figura 1b). La mediana de edad fue 22 años en Desertor y 19 en las otras clases.
 
-![Figura 2a. Porcentaje con cero materias aprobadas por clase](figuras/figura_02a.svg)
+![Asociaciones exploratorias en entrenamiento](figuras/figura_01.svg)
 
-*(a) Porcentaje con cero materias aprobadas dentro de cada clase.*
-
-![Figura 2b. Proporción de Desertor por grupo administrativo](figuras/figura_02b.svg)
-
-*(b) Proporción de Desertor dentro de cada grupo administrativo. Rojo: Desertor; gris: En Curso o Graduado. Cada barra suma 100 %; n indica el tamaño del grupo.*
-
-**Figura 2. Asociaciones exploratorias en entrenamiento (n=40.000).** Cada porcentaje utiliza como denominador su propio grupo.
+**Figura 1.** Asociaciones exploratorias en entrenamiento (n=40.000): (**a**) porcentaje de registros sin materias aprobadas dentro de cada clase, por semestre; (**b**) proporción de Desertor dentro de cada grupo administrativo; la línea discontinua indica la proporción en todo el entrenamiento. Cada porcentaje utiliza como denominador su propio grupo.
 
 ### 3.2. Clasificación binaria
 
-La regresión logística obtuvo el mayor F1 (0,8510). Soft Voting alcanzó la mayor ROC-AUC (0,9514), frente a 0,9506 de regresión logística, pero presentó menor sensibilidad y F1 (Tabla 2).
+La regresión logística obtuvo el mayor F1 (0,8510). Soft Voting alcanzó la mayor ROC-AUC (0,9514), frente a 0,9506 de regresión logística, pero presentó menor sensibilidad y F1 (Tabla 3). En los tres modelos individuales, la AUC de prueba difirió en 0,0005 o menos de la media de validación cruzada.
 
-**Tabla 2. Desempeño de los modelos binarios en prueba (n=10.000).**
+**Tabla 3.** Desempeño de los modelos binarios en validación cruzada (media ± DE de tres folds en entrenamiento) y en prueba (n=10.000). La negrita indica el mejor valor de cada columna.
 
-| Modelo | Accuracy | Precisión | Sensibilidad | F1 | ROC-AUC |
-|---|---:|---:|---:|---:|---:|
-| Logística | 0,9066 | 0,9004 | 0,8067 | 0,8510 | 0,9506 |
-| SVM | 0,8979 | 0,9150 | 0,7619 | 0,8315 | 0,9460 |
-| Árbol | 0,9057 | 0,9064 | 0,7970 | 0,8482 | 0,9440 |
-| Soft Voting | 0,9053 | 0,9080 | 0,7940 | 0,8472 | 0,9514 |
+| Modelo | ROC-AUC validación | Accuracy | Precisión | Sensibilidad | F1 | ROC-AUC |
+|---|---:|---:|---:|---:|---:|---:|
+| Logística | **0,9507 ± 0,0013** | **0,9066** | 0,9004 | **0,8067** | **0,8510** | 0,9506 |
+| SVM | 0,9462 ± 0,0012 | 0,8979 | **0,9150** | 0,7619 | 0,8315 | 0,9460 |
+| Árbol | 0,9445 ± 0,0016 | 0,9057 | 0,9064 | 0,7970 | 0,8482 | 0,9440 |
+| Soft Voting | — | 0,9053 | 0,9080 | 0,7940 | 0,8472 | **0,9514** |
 
-Precisión, sensibilidad y F1 corresponden a Desertor. Accuracy representa la proporción total de aciertos; precisión, la proporción de desertores entre los casos señalados; sensibilidad, la proporción detectada entre los desertores reales. ROC-AUC: área bajo la curva ROC.
+Precisión, sensibilidad y F1 corresponden a Desertor. Accuracy representa la proporción total de aciertos; precisión, la proporción de desertores entre los casos señalados; sensibilidad, la proporción detectada entre los desertores reales. ROC-AUC: área bajo la curva ROC. Soft Voting no se seleccionó por validación cruzada. La DE describe la variación entre folds y no es un intervalo de confianza.
+
+Las curvas ROC de los cuatro modelos se superpusieron en casi todo su recorrido (Figura 2a). Con el corte por defecto, los modelos se ubicaron en una región similar de la curva; SVM mostró menor sensibilidad con menor proporción de falsos positivos (Figura 2b).
+
+![Curvas ROC de los modelos binarios](figuras/figura_02.svg)
+
+**Figura 2.** Curvas ROC de los modelos binarios en prueba (n=10.000): (**a**) curvas completas; la diagonal corresponde a una clasificación sin discriminación; (**b**) detalle del recuadro de (a). Los puntos indican el corte por defecto: probabilidad 0,5 o signo de la función de decisión en SVM.
 
 ### 3.3. Clasificación multiclase
 
-RF obtuvo el mayor F1 macro (0,7808), seguido por AdaBoost (0,7776), árbol (0,7699) y K-NN (0,7483) (Tabla 3).
+RF obtuvo el mayor F1 macro (0,7808), seguido por AdaBoost (0,7776), árbol (0,7699) y K-NN (0,7483) (Tabla 4).
 
-**Tabla 3. Desempeño de los modelos multiclase en prueba (n=10.000).**
+**Tabla 4.** Desempeño de los modelos multiclase en validación cruzada (media ± DE de tres folds en entrenamiento) y en prueba (n=10.000). La negrita indica el mejor valor de cada columna.
 
-| Modelo | Accuracy | Precisión macro | Sensibilidad macro | F1 macro | ROC-AUC OvR |
-|---|---:|---:|---:|---:|---:|
-| K-NN | 0,7943 | 0,7664 | 0,7388 | 0,7483 | 0,9034 |
-| Árbol | 0,8106 | 0,7774 | 0,7647 | 0,7699 | 0,9170 |
-| Random Forest | 0,8196 | 0,7896 | 0,7750 | 0,7808 | 0,9254 |
-| AdaBoost | 0,8182 | 0,7874 | 0,7707 | 0,7776 | 0,9219 |
+| Modelo | F1 macro validación | Accuracy | Precisión macro | Sensibilidad macro | F1 macro | ROC-AUC OvR |
+|---|---:|---:|---:|---:|---:|---:|
+| K-NN | 0,7487 ± 0,0035 | 0,7943 | 0,7664 | 0,7388 | 0,7483 | 0,9034 |
+| Árbol | 0,7698 ± 0,0041 | 0,8106 | 0,7774 | 0,7647 | 0,7699 | 0,9170 |
+| Random Forest | **0,7814 ± 0,0008** | **0,8196** | **0,7896** | **0,7750** | **0,7808** | **0,9254** |
+| AdaBoost | 0,7715 ± 0,0038 | 0,8182 | 0,7874 | 0,7707 | 0,7776 | 0,9219 |
 
 Los promedios macro asignan igual peso a las tres clases. ROC-AUC OvR corresponde al promedio macro de las comparaciones de cada clase frente al resto.
 
-En Curso presentó el menor F1 en los cuatro modelos: 0,5542 en K-NN, 0,5899 en árbol, 0,6096 en RF y 0,6006 en AdaBoost. En RF, su sensibilidad fue 0,5981, frente a 0,8076 para Desertor y 0,9192 para Graduado.
+En Curso presentó el menor F1 en los cuatro modelos (Tabla 5). En RF, su sensibilidad fue 0,5981, frente a 0,8076 para Desertor y 0,9192 para Graduado. El mayor F1 de Desertor correspondió a AdaBoost (0,8562).
 
-De los 1.953 registros En Curso, RF clasificó 569 (29,1 %) como Graduado y 216 (11,1 %) como Desertor (Figura 3). La primera confusión queda oculta al agrupar En Curso y Graduado en una única categoría. Esta propiedad de las etiquetas no equivale al resultado de entrenar un clasificador binario.
+**Tabla 5.** F1 de cada clase en prueba (n=10.000). La negrita indica el mejor valor de cada columna.
 
-![Figura 3. Matriz de confusión de Random Forest](figuras/figura_06.svg)
+| Modelo | F1 macro | Desertor (n=3.306) | En Curso (n=1.953) | Graduado (n=4.741) |
+|---|---:|---:|---:|---:|
+| K-NN | 0,7483 | 0,8306 | 0,5542 | 0,8602 |
+| Árbol | 0,7699 | 0,8472 | 0,5899 | 0,8726 |
+| Random Forest | **0,7808** | 0,8529 | **0,6096** | **0,8798** |
+| AdaBoost | 0,7776 | **0,8562** | 0,6006 | 0,8758 |
 
-**Figura 3. Matriz de confusión de RF en prueba.** Cada fila presenta los conteos y porcentajes de una clase real; los errores aparecen en rojo.
+Entre paréntesis, número de registros de cada clase en prueba.
+
+En los cuatro modelos, la mayor parte de los errores en En Curso correspondió a predicciones de Graduado (entre 29 % y 39 % de la clase; Figura 3). De los 1.953 registros En Curso, RF clasificó 569 (29,1 %) como Graduado y 216 (11,1 %) como Desertor. La primera confusión queda oculta al agrupar En Curso y Graduado en una única categoría. Esta propiedad de las etiquetas no equivale al resultado de entrenar un clasificador binario.
+
+![Matrices de confusión de los modelos multiclase](figuras/figura_03.svg)
+
+**Figura 3.** Matrices de confusión en prueba (n=10.000) para (**a**) K-NN, (**b**) árbol, (**c**) Random Forest y (**d**) AdaBoost. Cada fila presenta el porcentaje de una clase real asignado a cada clase predicha y suma 100 %. Des.: Desertor; En C.: En Curso; Grad.: Graduado.
 
 ### 3.4. Complejidad y generalización
 
 En la tarea binaria, la AUC de validación de regresión logística varió poco entre C=0,01 y 10 (aproximadamente 0,9504–0,9507). En SVM, aumentar C desde la mejor región ensayada redujo el desempeño de validación. En el árbol con hoja mínima de 50 registros, la AUC alcanzó 0,9445 en profundidad 8 y luego se estabilizó, mientras el desempeño de entrenamiento continuó aumentando (Figura 4).
 
-![Figura 4. Curvas de complejidad binarias](figuras/figura_03.svg)
+![Curvas de complejidad binarias](figuras/figura_04.svg)
 
-**Figura 4. Curvas de complejidad de los modelos binarios.** AUC media de entrenamiento (gris) y validación (rojo) en tres folds sobre 40.000 registros. Las escalas verticales difieren entre paneles.
+**Figura 4.** Curvas de complejidad de los modelos binarios: ROC-AUC media de entrenamiento y validación en tres folds sobre 40.000 registros para (**a**) regresión logística según C; (**b**) SVM según C con γ=0,01; (**c**) árbol según la profundidad máxima con hoja mínima de 50 registros. El círculo marca la configuración final. Las escalas verticales difieren entre paneles.
 
 En multiclase, el RF reducido aumentó su F1 macro de validación de 0,7294 a 0,7741 entre profundidades 4 y 12; sin límite alcanzó 0,7738. Esta curva utilizó 80 árboles y hoja mínima de 10 registros, una configuración distinta de la final. K-NN con k=3 obtuvo 0,823 en entrenamiento y 0,700 en validación; el mayor valor de la curva se observó en k=11. La búsqueda principal seleccionó k=25 con otra muestra y otros candidatos. AdaBoost aumentó de 0,7656 a 0,7771 entre 100 y 600 árboles, sin descenso en el rango evaluado (Figura 5).
 
-![Figura 5. Curvas de complejidad multiclase](figuras/figura_04.svg)
+![Curvas de complejidad multiclase](figuras/figura_05.svg)
 
-**Figura 5. Curvas de complejidad de los modelos multiclase.** F1 macro medio de entrenamiento (gris) y validación (rojo) en tres folds. Árbol: 40.000 registros; RF y AdaBoost: 12.000; K-NN: 6.000. Cada curva corresponde a su propio protocolo.
+**Figura 5.** Curvas de complejidad de los modelos multiclase: F1 macro medio de entrenamiento y validación en tres folds para (**a**) árbol, 40.000 registros; (**b**) RF reducido, 12.000; (**c**) K-NN, 6.000; (**d**) AdaBoost, 12.000. La banda indica ± 1 DE entre folds de validación y el número, el máximo de validación de cada curva. El círculo marca el valor de la configuración final cuando la curva lo incluye. Cada curva corresponde a su propio protocolo.
 
 ### 3.5. Referencia y sensibilidad de la selección
 
-La referencia Dummy obtuvo ROC-AUC 0,500 en binario y F1 macro 0,214 en multiclase, por debajo de regresión logística y árbol (Figura 6).
+La referencia Dummy obtuvo ROC-AUC 0,500 en binario y F1 macro 0,214 en multiclase, por debajo de todos los modelos y aun de los entrenados solo con las variables de inscripción (Figura 6).
 
-Con configuraciones fijas, el cambio de tres a cinco folds modificó la AUC de regresión logística de 0,9503 a 0,9505 y el F1 macro del árbol de 0,7698 a 0,7690. En RF reducido, con 80 árboles, profundidad 12 y hoja mínima 10, cambió de 0,7741 a 0,7726. Esta comparación utilizó la partición estratificada por tres clases y no repitió la búsqueda completa de hiperparámetros.
-
-![Figura 6. Referencia Dummy y comparación de folds](figuras/figura_05.svg)
-
-**Figura 6. Referencia Dummy y sensibilidad al número de folds.** Desempeño de configuraciones fijas con tres folds (gris) y cinco (rojo) dentro de entrenamiento. Los paneles utilizan métricas diferentes.
+Con configuraciones fijas, el cambio de tres a cinco folds modificó la AUC de regresión logística de 0,9503 a 0,9505 y el F1 macro del árbol de 0,7698 a 0,7690. En RF reducido, con 80 árboles, profundidad 12 y hoja mínima 10, cambió de 0,7741 a 0,7726. Esta comparación utilizó la partición estratificada por tres clases y no repitió la búsqueda completa de hiperparámetros. Ninguno de estos cambios superó la DE entre los tres folds de la misma configuración (0,0002 en regresión logística, 0,0041 en árbol y 0,0086 en RF).
 
 En la segunda grilla del árbol, profundidad 12 y hoja mínima 50 alcanzó F1 macro de validación 0,7698, frente a 0,7694 con profundidad 8 y la misma hoja. Sin límite de profundidad y con hoja mínima 10, el F1 macro fue 0,8250 en entrenamiento y 0,7446 en validación.
 
-La ampliación de las grillas no mejoró K-NN más allá de 25 vecinos, mientras que AdaBoost continuó mejorando hasta 600 árboles (Tabla 4). Estas comprobaciones posteriores no modificaron las configuraciones finales.
+La ampliación de las grillas no mejoró K-NN más allá de 25 vecinos, mientras que AdaBoost continuó mejorando hasta 600 árboles (Tabla 6). Estas comprobaciones posteriores no modificaron las configuraciones finales.
 
-**Tabla 4. Ampliación de grillas: F1 macro medio en validación de tres folds sobre 40.000 registros.**
+**Tabla 6.** Ampliación de grillas: F1 macro medio en validación de tres folds sobre 40.000 registros. La negrita indica el mayor valor de cada modelo.
 
 | Modelo | Configuración fija | Hiperparámetro | Valor | F1 macro |
-|---|---|---|---:|---:|
+|----------|------------------------|--------------------|------:|--------:|
 | K-NN | pesos uniformes | *k* (n.º de vecinos) | 25 | **0,7487** |
 | | | | 35 | 0,7475 |
 | | | | 51 | 0,7453 |
@@ -185,29 +196,27 @@ La ampliación de las grillas no mejoró K-NN más allá de 25 vecinos, mientras
 | | | | 400 | 0,7715 |
 | | | | 600 | **0,7747** |
 
-La negrita indica el mayor F1 macro entre los valores probados para cada modelo.
-
 ### 3.6. Aporte acumulativo de los grupos de variables
 
-La incorporación de S1 a las 12 variables de inscripción y antecedentes aumentó la AUC de validación de regresión logística de 0,7941 a 0,9262. Al agregar S2 se alcanzó 0,9422 y, con las variables administrativas y familiares, 0,9503. En el árbol multiclase, los valores de F1 macro fueron 0,5603, 0,7115, 0,7529 y 0,7698, respectivamente (Figura 7). En ambas tareas, el mayor incremento se observó al incorporar S1.
+La incorporación de S1 a las 12 variables de inscripción y antecedentes aumentó la AUC de validación de regresión logística de 0,7941 a 0,9262. Al agregar S2 se alcanzó 0,9422 y, con las variables administrativas y familiares, 0,9503. En el árbol multiclase, los valores de F1 macro fueron 0,5603, 0,7115, 0,7529 y 0,7698, respectivamente (Figura 6). En ambas tareas, el mayor incremento se observó al incorporar S1.
 
-![Figura 7. Desempeño al agregar grupos de variables](figuras/figura_07.svg)
+![Desempeño al agregar grupos de variables](figuras/figura_06.svg)
 
-**Figura 7. Desempeño en validación cruzada del análisis acumulativo.** Se incorporaron sucesivamente 12, 16, 20 y 27 predictores, manteniendo las filas y los folds dentro de cada tarea y seleccionando hiperparámetros en cada etapa. El punto rojo incorpora el grupo administrativo y familiar, cuya fecha de disponibilidad es desconocida.
+**Figura 6.** Desempeño en validación cruzada del análisis acumulativo: (**a**) ROC-AUC de regresión logística binaria; (**b**) F1 macro del árbol multiclase. Se incorporaron sucesivamente 12, 16, 20 y 27 predictores (Tabla 1), manteniendo las filas y los folds dentro de cada tarea y seleccionando hiperparámetros en cada etapa. Los números inferiores indican el cambio entre etapas consecutivas. El tramo discontinuo incorpora el grupo administrativo y familiar, cuya fecha de disponibilidad es desconocida. La línea punteada indica la referencia Dummy.
 
 ### 3.7. Importancia de los predictores
 
-Las mayores caídas del F1 macro de RF por permutación correspondieron a materias aprobadas en S2 (0,1004) y matrícula al día (0,0360) (Figura 8). Las sumas descriptivas de importancias positivas fueron 0,1533 para las ocho variables académicas, 0,0468 para deuda, matrícula y beca, y 0,0075 para las otras 16 variables. Estas sumas no equivalen a permutar grupos completos ni descomponen el desempeño del modelo.
+Las mayores caídas del F1 macro de RF por permutación correspondieron a materias aprobadas en S2 (0,1004) y matrícula al día (0,0360) (Figura 7). Las sumas descriptivas de importancias positivas fueron 0,1533 para las ocho variables académicas, 0,0468 para deuda, matrícula y beca, y 0,0075 para las otras 16 variables. Estas sumas no equivalen a permutar grupos completos ni descomponen el desempeño del modelo.
 
-![Figura 8. Importancia por permutación en Random Forest](figuras/figura_08.svg)
+![Importancia por permutación en Random Forest](figuras/figura_07.svg)
 
-**Figura 8. Importancia por permutación en RF.** Caída media del F1 macro de validación al permutar cada predictor original. Un valor mayor indica mayor dependencia predictiva del modelo respecto de esa variable.
+**Figura 7.** Importancia por permutación en RF: caída media del F1 macro de validación al permutar cada predictor original (± 1 DE). Se muestran las 13 variables con mayor caída, coloreadas según el grupo utilizado en las sumas descriptivas. Un valor mayor indica mayor dependencia predictiva del modelo respecto de esa variable.
 
 ### 3.8. Sensibilidad a los perfiles repetidos
 
-En el análisis acumulativo, 103 registros de prueba compartían los mismos 27 predictores con alguna fila de entrenamiento; en 94 también coincidía la etiqueta. Al excluirlos sin reajustar los modelos, las métricas disminuyeron entre 0,0005 y 0,0007 (Tabla 5).
+En el análisis acumulativo, 103 registros de prueba compartían los mismos 27 predictores con alguna fila de entrenamiento; en 94 también coincidía la etiqueta. Al excluirlos sin reajustar los modelos, las métricas disminuyeron entre 0,0005 y 0,0007 (Tabla 7).
 
-**Tabla 5. Desempeño de los modelos del análisis acumulativo con y sin perfiles repetidos en prueba.**
+**Tabla 7.** Desempeño de los modelos del análisis acumulativo con y sin perfiles repetidos en prueba.
 
 | Modelo | Métrica | Test completo (n=10.000) | Sin repetidos (n=9.897) |
 |---|---|---:|---:|
@@ -216,7 +225,7 @@ En el análisis acumulativo, 103 registros de prueba compartían los mismos 27 p
 | Logística binaria, 27 variables | ROC-AUC | 0,9518 | 0,9513 |
 | Árbol multiclase, 27 variables | F1 macro | 0,7699 | 0,7694 |
 
-Las métricas se recalcularon sin reentrenamiento. La AUC 0,9518 corresponde a la partición del análisis acumulativo, distinta de la utilizada en la Tabla 2.
+Las métricas se recalcularon sin reentrenamiento. La AUC 0,9518 corresponde a la partición del análisis acumulativo, distinta de la utilizada en la Tabla 3.
 
 ## 4. Discusión
 
